@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Matheus Martins</title>
+  <link href="../style/style.css" type="text/css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="icon" href="http://example.com/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/nuz3ilo.css">
+  <link rel="icon" href="./images/favicon.svg">
+</head>
+
+<body>
+
+<section>
+
+<header>
+
+ <div id="topheader">
+  <div class="color" id="Header">
+    <h1 id="logo"><a href="../index.html">Matheus <span id="martins">Martins</span></a></h1>
+    <h2 id="designer" class="text">Graphic Designer</h2>
+  </div>
+  <nav class="weight color">
+    <ul>
+	  <li> <a href="../index.html">Works</a></li>
+	  <li> <a href="../about.html">About</a></li>
+	  <li> <a href="../contact.html">Contact</a></li>
+	  <li> <a href="../cv.pdf" target="_blank">CV</a></li>
+	</ul>
+  </nav>
+  <div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn"><img class="dropbtn" src="../images/dropdown.svg"></button>
+      <div id="myDropdown" class="dropdown-content weight color">
+	    <div id="down">
+          <a href="../index.html">Works</a>
+          <a href="../about.html">About</a>
+		  <a href="../contact.html">Contact</a>
+		  <a href="../cv.pdf">CV</a>
+		</div>
+		<div id="lang">
+		  <a href="../en.html">EN</a>
+		  <a href="../en.html" id="esp">ES</a>
+		  <a href="../en.html">PT</a>
+        </div>
+	</div>
+	<script>
+	  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+ </div>
+ </div>
+ 
+ <footer id="dropdown-contacts">
+   <div class="dropdown" id="drop1">
+     <button class="dropbtn"><a href="https://www.instagram.com/mytheus/" target="_blank"><img class="icongreen" src="../images/instagram_icon_green.svg"><img class="iconoff" src="../images/instagram_icon.svg"></a></button>
+     <div class="dropdown-content">
+       <a class="contact text color" id="instalink" href="https://www.instagram.com/mytheus/" target="_blank">@mytheus</a>
+     </div>
+   </div>
+   <div class="dropdown" id="drop2">
+     <button class="dropbtn"><a href="mailto: matheus.msam@gmail.com"><img class="icongreen" src="../images/email_icon_green.svg"><img class="iconoff" src="../images/email_icon.svg"></a></button>
+     <div class="dropdown-content">
+        <span class="contact text color" id="emailcopy">matheus.msam@gmail.com</span>
+     </div>
+   </div>
+ </footer>
+</header>
+
+<div id="block"></div>
+<div id="contentwork">
+  <h1 class="page-title color">Works</h1>
+  <div id="worksgrid">
+  <h2 class="weight color">Spyre</h2>
+    <img src="../images/spyrepage.png">
+	<h4 class="color weight">Video Game</h4>
+	<p>
+	Indie video game developed with a small team of designers. Currently between the top 10 finalists of the Playstation Talents 2020 competition. Worked in art direction, creative direction, 3D modelling, 3D animation, logo creation, level design, writing and voice acting.
+	</p>
+	<img src="../images/drone.png">
+	<p>
+	The game is a first person shooter with puzzle mechanics. The objective is to escape the virtual simulated prison the main character is stuck in. The player takes on a journey going through different worlds and hacking reality alongside her drone friend.
+	</p>
+	<img src="../images/spyre1.png">
+	<img src="../images/spyre2.png">
+	<h4 id="back" class="color weight"><a href="../index.html">back to home page</a></h4>
+  </div>
+</div>
+</section>
+
+
+<div class="language text color">
+  <a href="./index.html">EN</a> <span class="separate">|</span> <a href="./languages/PT/index-pt.html">PT</a> <span class="separate">|</span> <a id="es" href="./languages/ES/index-es.html">ES</a>
+</div>
+</body>
+</html>
