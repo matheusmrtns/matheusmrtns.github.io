@@ -3,7 +3,7 @@
 
 <head>
   <title>Matheus Martins Design Portfolio</title>
-  <meta name="description" content="Design portfolio of Matheus Martins, a Brazilian graphic designer based in Barcelona. Experienced with graphic design, 3D modelling, illustration, photo editing and art direction">
+  <meta name="description" content="Design portfolio of Matheus Martins, Brazilian graphic designer based in Barcelona. Experienced with graphic design, 3D modelling, illustration, photo editing and art direction">
   <link href="./style/style.css" type="text/css" rel="stylesheet">
   <meta charset="UTF-8">
   <link rel="icon" href="http://example.com/favicon.png">
@@ -15,111 +15,92 @@
 
 <body>
 
-<section>
-
 <header>
-
- <div id="topheader">
-  <div class="color" id="Header">
-    <h1 id="logo"><a href="#content">Matheus <span id="martins">Martins</span></a></h1>
-    <h2 id="designer" class="text">Graphic Designer</h2>
-  </div>
-  <nav class="weight color">
-    <ul>
-	  <li id="workpage">Works</li>
-	  <li> <a href="./about.html">About</a></li>
-	  <li> <a href="./contact.html">Contact</a></li>
-	  <li> <a href="./cv.pdf" target="_blank">CV</a></li>
-	</ul>
-  </nav>
-  <div class="dropdown">
-	  <button onclick="myFunction()" class="dropbtn"><img class="dropbtn" src="./images/dropdown.svg"></button>
-      <div id="myDropdown" class="dropdown-content weight color">
-	    <div id="down">
-          <a id="workpage" href="./index.html">Works</a>
-          <a href="./about.html">About</a>
-		  <a href="./contact.html">Contact</a>
-		  <a href="./cv.pdf">CV</a>
-		</div>
-		<div id="lang">
-		  <a href="./en.html">EN</a>
-		  <a href="./en.html" id="esp">ES</a>
-		  <a href="./en.html">PT</a>
-        </div>
+	<a href="./about.html">
+	<div id="logo">
+		<img id="matheus" src="./images/matheus.svg">
+		<img id="martins" src="./images/martins.svg">
 	</div>
-	<script>
-	  function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
- </div>
- </div>
- 
- <footer id="dropdown-contacts">
-   <div class="dropdown" id="drop1">
-     <button class="dropbtn"><a href="https://www.instagram.com/mytheus/" target="_blank"><img class="icongreen" src="./images/instagram_icon_green.svg"><img class="iconoff" src="./images/instagram_icon.svg"></a></button>
-     <div class="dropdown-content">
-       <a class="contact text color" id="instalink" href="https://www.instagram.com/mytheus/" target="_blank">@mytheus</a>
-     </div>
-   </div>
-   <div class="dropdown" id="drop2">
-     <button class="dropbtn"><a href="mailto: matheus.msam@gmail.com"><img class="icongreen" src="./images/email_icon_green.svg"><img class="iconoff" src="./images/email_icon.svg"></a></button>
-     <div class="dropdown-content">
-        <span class="contact text color" id="emailcopy">matheus.msam@gmail.com</span>
-     </div>
-   </div>
- </footer>
+	</a>
+	<div id="pnav">Design &nbsp;&nbsp;|&nbsp;&nbsp; Art Direction &nbsp;&nbsp;|&nbsp;&nbsp; Multimedia</div>
+	<div id="area">
+		<div id="line"></div>
+		<div id="area2"><span id="des">Design</span><br><span id="art">Art Direction</span><br>Multimedia</div>
+	</div>
 </header>
-
-<div id="block"></div>
+<section>
 <div id="content">
-  <h1 class="page-title color">Works</h1>
   <div id="grid" class="text color">
-    <article>
-	  <a class="imglink" href="./works/pastel.html"><img src="./images/pastel.png"></a>
-	  <figcaption><a href="./works/pastel.html">Fábrica de Pastel <span class="separate">|</span> 2020</a>  <span class="description">3D Animation</span></figcaption>
-	</article>
-    <article>
-	  <a class="imglink" href="./works/robertasa.html"><img src="./images/PNSA.png"></a>
-	  <figcaption><a href="./works/robertasa.html">Roberta Sá <span class="separate">|</span> 2020</a>  <span class="description">Branding</span></figcaption>
-	</article>
-	<article>
-	  <a class="imglink" href="./works/spyre.html"><img src="./images/spyre.png"></a>
-	  <figcaption><a href="./works/spyre.html">Spyre <span class="separate">|</span> 2020</a>  <span class="description">Video Game</span></figcaption>
-	</article>
-	<article>
-	  <a class="imglink" href="./works/alexei.html"><img src="./images/alexei.png"></a>
-	  <figcaption><a href="./works/alexei.html">Alexei <span class="separate">|</span> 2019-2020</a>  <span class="description">Clothing</span></figcaption>
-	</article>
-	<article>
-	  <a class="imglink" href="./works/photoediting.html"><img src="./images/head.png"></a>
-	  <figcaption><a href="./works/photoediting.html">Photography / Editing</a><span class="description">Media</span></figcaption>
-	</article>
-	<article>
-	  <a class="imglink" href="./works/nucleo.html"><img src="./images/nucleo3.png"></a>
-	  <figcaption><a href="./works/nucleo.html">Núcleo+ <span class="separate">|</span> 2019</a>  <span class="description">Branding</span></figcaption>
-	</article>
-	<article>
-	  <a class="imglink" href="./index.html"><img src="./images/font.png"></a>
-	  <figcaption><a href="./index.html">Monstre <span class="separate">|</span> 2020</a>  <span class="description">Font</span></figcaption>
-	</article>
-	<article>
-	  <a class="imglink" href="./works/posters.html"><img src="./images/posters.png"></a>
-	  <figcaption><a href="./works/posters.html">Various Works</a><span class="description">Media</span></figcaption>
-	</article>
+    <a href="./La_Gran_Finale.html"><article>
+    	<div id="block">
+	    <img src="./images/gran_finale.jpg">
+	    </div>
+	    <figcaption>La Gran Finale<br><span class='desc'>Animated Logo</span></figcaption>
+	    <div id="bline"></div>
+	  </article></a>
+	  <article>
+	  	<div id="block">
+	    <img src="./images/alexei.jpg">
+	    </div>
+	    <figcaption>Alexei<br><span class='desc'>Print Design</span></figcaption>
+	    <div id="bline"></div>
+	  </article>
+	  <a href="./A_Vida_Sao_Dois_Dias.html"><article>
+	   <div id="block">
+	   	<img src="./images/AVS2D.jpg">
+	   </div>
+	   <figcaption>A Vida São Dois Dias<br><span class='desc'>Movie Poster Design</span></figcaption>
+	   <div id="bline"></div>
+	  </article></a>
+	  <article>
+    	<div id="block">
+	    <img src="./images/bassols_playa.jpg">
+	    </div>
+	    <figcaption>Bassols Sand Collection<br><span class='desc'>Art Direction</span></figcaption>
+	    <div id="bline"></div>
+	  </article>
+	  <article>
+    	<div id="block">
+	    <img src="./images/bassols_oti.jpg">
+	    </div>
+	    <figcaption>Bassols Fall/Winter 22<br><span class='desc'>Art Direction</span></figcaption>
+	    <div id="bline"></div>
+	  </article>
+	  <article>
+    	<div id="block">
+	    <img src="./images/alfombra.jpg">
+	    </div>
+	    <figcaption>Rafa Gil Studio<br><span class='desc'>Rug Design</span></figcaption>
+	    <div id="bline"></div>
+	  </article>
+	  <article>
+    	<div id="block">
+	    <img src="./images/nucleo.png">
+	    </div>
+	    <figcaption>Núcleo+<br><span class='desc'>Brand Identity</span></figcaption>
+	    <div id="bline"></div>
+	  </article>
+	   <a href="./Various_Works.html"><article>
+    	<div id="block">
+	    <img src="./images/various_works.jpg">
+	    </div>
+	    <figcaption>Various Works<br><span class='desc'>Miscellaneous Media</span></figcaption>
+	    <div id="bline"></div>
+	  </article></a>
+	  <a href="./Fabrica_de_Pastel.html"><article>
+    	<div id="block">
+	    <img src="./images/pastel.jpg">
+	    </div>
+	    <figcaption>Fábrica de Pastel<br><span class='desc'>3D Animation</span></figcaption>
+	    <div id="bline"></div>
+	  </article></a>
+	  <article>
+    	<div id="block">
+	    <img src="./images/robertasa.jpg">
+	    </div>
+	    <figcaption>Roberta Sá<br><span class='desc'>Branding</span></figcaption>
+	    <div id="bline"></div>
+	  </article>
   </div>
 </div>
 </section>
@@ -128,5 +109,6 @@
 <div class="language text color">
   <a href="./index.html">EN</a> <span class="separate">|</span> <a href="./languages/PT/index-pt.html">PT</a> <span class="separate">|</span> <a id="es" href="./languages/ES/index-es.html">ES</a>
 </div>
+<div id="circle" class="circle"></div>
 </body>
 </html>
