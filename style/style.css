@@ -99,74 +99,52 @@ ul {
 header {
 	height: 650px;
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 	margin: auto;
 }
 
 #logo {
-	width: 61vw;
-	margin-top: -30px;
-	margin-left: 7vw;
 	display: flex;
 	flex-wrap: wrap;
+	flex-flow: column nowrap;
 	justify-content: center;
 }
 
 #logo:hover #matheus {
-	margin-left: -46px;
+	margin-bottom: 13px;
 }
 
 #logo:hover #martins {
-	margin-left: 46px;
+	margin-top: 13px;
+}
+
+#logo:hover #line3 {
+	height: 90px;
 }
 
 #matheus {
-	height: 9.375vw;
-	margin-bottom: 20px;
+	width: 150px;
+	margin-bottom: 5px;
 	transition: .4s ease;
 }
 
 #martins {
-	height: 8.333vw;
+	width: 133px;
 	margin-left: 9px;
 	transition: .4s ease;
 }
 
+#line3 {
+	width: 0px;
+	height: 0px;
+	border-left: 1px solid rgb(0, 0, 0);
+	transition: .4s ease;
+	margin: auto;
+}
+
 #pnav {
 	display: none;
-}
-
-#line {
-	border-bottom: 1px solid rgb(0, 0, 0);
-	width: 18.1vw;
-	transform: rotate(-60deg);
-	transform-origin: right;
-	background-color: blue;
-	margin-left: -6.5vw;
-}
-
-#area {
-	width: 25.8vw;
-	height: 261px;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-
-#area2 {
-	font-family: 'ClashDisplay-Regular';
-	font-size: 1.7vw;
-	line-height: 40pt;
-	margin-left: 10vw;
-	margin-top: 60px;
-}
-
-#des {
-	margin-left: 70px;
-}
-
-#art {
-	margin-left: 30px;
 }
 
 #drop {
