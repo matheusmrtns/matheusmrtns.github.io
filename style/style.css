@@ -143,10 +143,6 @@ header {
 	margin: auto;
 }
 
-#pnav {
-	display: none;
-}
-
 #drop {
 	width: 50px;
 	margin-right: 260px;
@@ -329,13 +325,7 @@ html {
 body {zoom: 0.8;}
 } */
 
-@media only screen and (max-width: 1719px) {
-
-#logo {
-	line-height: 1;
-	font-size: 80px;
-	margin-bottom: 21px;
-}
+@media only screen and (max-width: 1720px) {
 
 #grid {
 	justify-content: space-evenly;
@@ -349,14 +339,6 @@ article {
 
 article:hover #block{
 	height: 40.5vw;
-}
-
-#line {
-	margin-top: 0px;
-}
-
-#area2 {
-	margin-top: 40px;
 }
 
 }
@@ -380,15 +362,6 @@ figcaption {
 
 .desc {
 	font-size: 12pt;
-}
-
-#line {
-	margin-top: 30px;
-}
-
-#area2 {
-	margin-top: 30px;
-	line-height: 30pt;
 }
 
 }
@@ -437,41 +410,6 @@ article:hover img{
 
 article:hover figcaption {
 	bottom: 0;
-}
-
-header {
-	height: 80vw;
-	display: block;
-	text-align: center;
-}
-
-header a {
-	margin-top: 0;
-}
-
-#line {
-	display: none;
-}
-
-#logo {
-	margin-left: 0;
-	margin-bottom: 0;
-	width: 100%;
-	position: relative;
-	top: 29vw;
-}
-
-#area {
-	display: none;
-}
-
-#pnav {
-	display: block;
-	position: relative;
-	top: 52vw;
-	font-family: 'ClashDisplay-Regular';
-	font-size: 3vw;
-	line-height: 5.3vw;
 }
 
 }	
