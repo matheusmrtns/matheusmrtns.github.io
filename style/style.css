@@ -371,6 +371,26 @@ figcaption {
 footer , .language , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
 	display:none;
 }
+
+#matheus {
+	width: 220px;
+}
+
+#martins {
+	width: 203px;
+}
+
+#logo:hover #matheus {
+	margin-bottom: 0;
+}
+
+#logo:hover #martins {
+	margin-top: 0;
+}
+
+#logo:hover #line3 {
+	height: 0px;
+}
 	
 figcaption {
 	bottom: 0;
