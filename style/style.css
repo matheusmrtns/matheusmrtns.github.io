@@ -128,8 +128,8 @@ header {
   display: inline-block;
   position: absolute;
   transition: .4s ease;
-  height: 56px;
-  width: 56px;
+  height: 100%;
+  width: 100%;
  } 
 
  .doth {
@@ -137,8 +137,8 @@ header {
  }
 
  #dot1 {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   /*animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -152,17 +152,17 @@ header {
  }
 
  #doth1 {
- 	height: 56px;
-  width: 56px;
+ 	height: 46.2%;
+  width: 18.666%;
   left: 0;
   top: 0;
  }
 
  #doth1:hover #dot1{
- 	left: 14px;
-  top: 14px;
- 	height: 40px;
- 	width: 40px;
+ 	left: 25%;
+  top: 25%;
+ 	height: 71.428%;
+ 	width: 71.428%;
  }
 
  #dot2 {
@@ -171,15 +171,15 @@ header {
  }
 
  #doth2 {
- 	height: 56px;
-  width: 56px;
-  left: 0px;
-  bottom: 4px;
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 0;
+  bottom: 3.2%;
  }
 
  #doth2:hover #dot2{
- 	height: 45px;
- 	width: 45px;
+ 	height: 80.357%;
+ 	width: 80.357%;
  }
 
  #dot3 {
@@ -188,17 +188,17 @@ header {
  }
 
  #doth3{
- 	height: 56px;
-  width: 56px;
-  left: 122px;
-  top: 0px;
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 40.666%;
+  top: 0;
  }
 
  #doth3:hover #dot3{
   bottom: 0;
-  left: 8px;
- 	height: 40px;
- 	width: 40px;
+  left: 14.285%;
+ 	height: 71.428%;
+ 	width: 71.428%;
  }
 
  #dot4 {
@@ -207,17 +207,17 @@ header {
  }
 
  #doth4{
- 	height: 56px;
-  width: 56px;
-  left: 61px;
-  bottom: 4px;
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 20.333%;
+  bottom: 3.3%;
  }
 
  #doth4:hover #dot4{
- 	left: 8px;
-  top: 0px;
- 	height: 40px;
- 	width: 40px;
+ 	left: 14.285%;
+  top: 0;
+ 	height: 71.428%;
+ 	width: 71.428%;
  }
 
  #dot5 {
@@ -226,17 +226,17 @@ header {
  }
 
  #doth5{
- 	height: 56px;
-  width: 56px;
-  left: 183px;
-  bottom: 4px;
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 61%;
+  bottom: 3.3%;
  }
 
  #doth5:hover #dot5{
- 	right: 8px;
+ 	right: 14.285%;
   top: 0;
- 	height: 40px;
- 	width: 40px;
+ 	height: 71.428%;
+ 	width: 71.428%;
  }
 
  #dot6 {
@@ -245,17 +245,17 @@ header {
  }
 
  #doth6{
- 	height: 56px;
-  width: 56px;
-  left: 244px;
-  top: 0px;
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 81.333%;
+  top: 0;
  }
 
  #doth6:hover #dot6{
- 	right: 14px;
-  top: 14px;
- 	height: 40px;
- 	width: 40px;
+ 	right: 25%;
+  top: 25%;
+ 	height: 71.428%;
+ 	width: 71.428%;
  }
 
  #dot7 {
@@ -264,15 +264,15 @@ header {
  }
 
  #doth7{
- 	height: 56px;
-  width: 56px;
-  right: 0px;
-  bottom: 4px;
+ 	height: 46.2%;
+  width: 18.666%;
+  right: 0;
+  bottom: 3.2%;
  }
 
  #doth7:hover #dot7{
- 	height: 45px;
- 	width: 45px;
+ 	height: 80.357%;
+ 	width: 80.357%;
  }
 
 #logo {
@@ -445,22 +445,7 @@ nav {
 
 #content {
 	width: 100%;
-	height:900px;
 	position: relative;
-}
-
-iframe {
-	width: 100%;
-	height: 563px;
-	margin-bottom: 50px;
-}
-
-h4 {
-	font-size: 20px;
-	text-align: center;
-	margin-bottom: 50px;
-	display: block;
-	width: 100%;
 }
 
 #videoH , #videoL , #videoV{
@@ -541,10 +526,6 @@ figcaption {
 #block {
 	background-color: transparent;
 	height: 100%;
-}
-
-article , img , #block {
-	opacity: 1;
 }
 
 article {
