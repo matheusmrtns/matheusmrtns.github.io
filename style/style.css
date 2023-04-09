@@ -319,7 +319,7 @@ section {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 75%;
+	width: 1400px;
 }
 
 article {
@@ -478,104 +478,74 @@ html {
 body {zoom: 0.8;}
 } */
 
-@media only screen and (max-width: 1720px) {
 
-#grid {
-	justify-content: space-evenly;
-}
+@media only screen and (max-width: 1520px) {
 
-article {
-	width: 33.06vw;
-	height: 45vw;
-	margin-bottom: 9.334vw;
-}
-
-article:hover #block{
-	height: 40.5vw;
-}
-
-}
-
-@media only screen and (max-width: 1218px) {
-
-article {
-	width: 40vw;
-	height: 53.5vw;
-	margin-bottom: 9.334vw;
-}
-
-article:hover #block{
-	height: 48vw;
-}
-
-figcaption {
+	figcaption {
 	font-size: 18pt;
-	bottom: 3.285vw;
-}
+	}
 
-.desc {
-	font-size: 12pt;
+ article {
+	height: 500px;
+	width: 375px;
+ }
+
+ #grid {
+	justify-content: space-evenly;
+	width: 98%;
+ }
+
+ }
+
+@media only screen and (max-width: 1326px) {
+
+article {
+	height: 570px;
+	width: 430px;
 }
 
 }
 
 @media only screen and (max-width: 990px) {
-	
+
+
 footer , .language , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
 	display:none;
 }
-
-#matheus {
-	width: 220px;
-}
-
-#martins {
-	width: 203px;
-}
-
-#logo:hover #matheus {
-	margin-bottom: 0;
-}
-
-#logo:hover #martins {
-	margin-top: 5px;
-}
-
-#logo:hover #line3 {
-	height: 0px;
-}
 	
 figcaption {
-	bottom: 0;
+	bottom: -12vw;
 	font-size: 5vw;
 	line-height: 4vw;
-
 }	
 
 .desc {
 	font-size: 3.7vw;
 }
 
-#grid a {
-	width: 100%;
+#grid {
+	width: 80%;
+	justify-content: center;
 }
 
 #block {
 	background-color: transparent;
+	height: 100%;
 }
 
 article {
-	width: 100%;
+	margin-bottom: 27vw;
+	width: 80vw;
 	max-width: 100%;
-	height: 147vw;
+	height: 106vw;
+}
+
+article:hover #block {
+	height: 100%;
 }
 
 article:hover #bline {
 	width: 0%;
-}
-
-article:hover #block{
-	height: 133.4vw;
 }
 
 article:hover img{
@@ -583,7 +553,7 @@ article:hover img{
 }
 
 article:hover figcaption {
-	bottom: 0;
+	bottom: -12vw;
 }
 
 #videoH {
