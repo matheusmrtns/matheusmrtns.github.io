@@ -132,6 +132,15 @@ header {
   width: 100%;
  } 
 
+ .dotty {
+  background-color: #333333;
+  display: inline-block;
+  position: absolute;
+  transition: .4s ease;
+  height: 100%;
+  width: 100%;
+ } 
+
  .doth {
  	position: absolute;
  }
@@ -146,9 +155,9 @@ header {
  }
 
  @keyframes example {
-  0%   {left: 0px; top: 0px; height: 56px; width: 56px;}
-  50%   {left: 14px; top: 14px; height: 40px; width: 40px;}
-  100%   {left: 0px; top: 0px; height: 56px; width: 56px;}*/
+  0%   {left: 0px; top: 0px; height: 100%; width: 100%;}
+  50%   {left: 25%; top: 25%; height: 71.428%; width: 71.428%;}
+  100%   {left: 0px; top: 0px; height: 100%; width: 100%;}*/
  }
 
  #doth1 {
@@ -273,6 +282,66 @@ header {
  #doth7:hover #dot7{
  	height: 80.357%;
  	width: 80.357%;
+ }
+
+  #dot8 {
+ 	left: 0;
+ 	bottom: 0;
+ 	border-radius: 0% 0% 1000px 1000px;
+ }
+
+ #doth8{
+ 	height: 24%;
+  width: 18.666%;
+  left: 40.666%;
+  bottom: 3.2%;
+ }
+
+ #doth8:hover #dot8{
+ 	height: 102%;
+ 	width: 102%;
+ 	left: -1%;
+ 	bottom: 26%;
+ }
+
+   #dot9 {
+ 	left: 0;
+ 	top: 0;
+ 	border-radius: 1000px 1000px 0% 0%;
+ }
+
+ #doth9 {
+ 	height: 24%;
+  width: 18.666%;
+  left: 20.333%;
+  top: 1%;
+ }
+
+ #doth9:hover #dot9{
+ 	height: 102%;
+ 	width: 102%;
+ 	left: -1%;
+ 	top: 26%;
+ }
+
+ #dot10 {
+ 	left: 0;
+ 	top: 0;
+ 	border-radius: 1000px 1000px 0% 0%;
+ }
+
+ #doth10 {
+ 	height: 24%;
+  width: 18.666%;
+  left: 61%;
+  top: 1%;
+ }
+
+ #doth10:hover #dot10{
+ 	height: 102%;
+ 	width: 102%;
+ 	left: -1%;
+ 	top: 26%;
  }
 
 #logo {
