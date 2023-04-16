@@ -16,7 +16,7 @@ footer button a:hover {
 
 body {
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #fcfcfc;
 }	
 
 ::-moz-selection { background: SpringGreen; }
@@ -122,8 +122,12 @@ header {
 
 #icon img {	pointer-events: none; }
 
+.st1 , .dot , .dotty {
+	fill:#333333;
+	background-color: #333333;
+}
+
 .dot {
-  background-color: #333333;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -133,10 +137,9 @@ header {
  } 
 
  .dotty {
-  background-color: #333333;
   display: inline-block;
   position: absolute;
-  transition: .4s ease;
+  transition: .3s ease;
   height: 100%;
   width: 100%;
  } 
@@ -288,60 +291,63 @@ header {
  	left: 0;
  	bottom: 0;
  	border-radius: 0% 0% 1000px 1000px;
+ 	height: 50%;
  }
 
  #doth8{
- 	height: 24%;
+ 	height: 48%;
   width: 18.666%;
   left: 40.666%;
   bottom: 3.2%;
  }
 
  #doth8:hover #dot8{
- 	height: 102%;
+ 	height: 51%;
  	width: 102%;
  	left: -1%;
- 	bottom: 26%;
+ 	bottom: 12%;
  }
 
-   #dot9 {
+ #dot9 {
  	left: 0;
  	top: 0;
  	border-radius: 1000px 1000px 0% 0%;
+ 	height: 50%;
  }
 
  #doth9 {
- 	height: 24%;
+ 	height: 48%;
   width: 18.666%;
   left: 20.333%;
   top: 1%;
  }
 
  #doth9:hover #dot9{
- 	height: 102%;
+ 	height: 51%;
  	width: 102%;
  	left: -1%;
- 	top: 26%;
+ 	top: 12%;
  }
 
  #dot10 {
  	left: 0;
  	top: 0;
  	border-radius: 1000px 1000px 0% 0%;
+ 	height: 50%;
  }
 
  #doth10 {
- 	height: 24%;
+ 	height: 48%;
   width: 18.666%;
   left: 61%;
   top: 1%;
  }
 
  #doth10:hover #dot10{
- 	height: 102%;
+ 	height: 51%;
  	width: 102%;
  	left: -1%;
- 	top: 26%;
+ 	top: 12%;
  }
 
 #logo {
