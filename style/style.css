@@ -113,6 +113,24 @@ header {
 	margin: auto;
 }
 
+#navbar {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transition: top 0.3s;
+	filter: drop-shadow(0px -15px 10px #000000);
+}
+
+#navlogo {
+	width: 65px;
+}
+
 #icon {
 	margin: auto;
 	width: 300px;
@@ -171,10 +189,10 @@ header {
  }
 
  #doth1:hover #dot1{
- 	left: 25%;
-  top: 25%;
- 	height: 71.428%;
- 	width: 71.428%;
+ 	left: 18%;
+  top: 18%;
+ 	height: 80%;
+ 	width: 80%;
  }
 
  #dot2 {
@@ -208,9 +226,9 @@ header {
 
  #doth3:hover #dot3{
   bottom: 0;
-  left: 14.285%;
- 	height: 71.428%;
- 	width: 71.428%;
+  left: 10%;
+ 	height: 80%;
+ 	width: 80%;
  }
 
  #dot4 {
@@ -226,10 +244,10 @@ header {
  }
 
  #doth4:hover #dot4{
- 	left: 14.285%;
+ 	left: 10%;
   top: 0;
- 	height: 71.428%;
- 	width: 71.428%;
+ 	height: 80%;
+ 	width: 80%;
  }
 
  #dot5 {
@@ -245,10 +263,10 @@ header {
  }
 
  #doth5:hover #dot5{
- 	right: 14.285%;
+ 	right: 10%;
   top: 0;
- 	height: 71.428%;
- 	width: 71.428%;
+ 	height: 80%;
+ 	width: 80%;
  }
 
  #dot6 {
@@ -264,10 +282,10 @@ header {
  }
 
  #doth6:hover #dot6{
- 	right: 25%;
-  top: 25%;
- 	height: 71.428%;
- 	width: 71.428%;
+ 	right: 18%;
+  top: 18%;
+ 	height: 80%;
+ 	width: 80%;
  }
 
  #dot7 {
@@ -472,20 +490,6 @@ article:hover #bline {
 	font-size: 14pt;
 }
 
-nav {
-	width: 100%;
-	height: 70px;
-	background-color: white;
-	margin-bottom: 100px;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding-left: 30px;
-	position: fixed;
-	top: 0;
-	z-index: 1;
-}
-
 #logo2 {
 	height: 70px;
 	display: flex;	
@@ -540,8 +544,15 @@ nav {
 	display: none;
 }
 
+#dvid {
+	width: 550px;
+	margin-top: 210px;
+}
+
 html {
 	scroll-behavior: smooth;
+	width: 100vw;
+	overflow-x:hidden;
 }
 
 /* @media screen and (min-resolution: 120dpi) { 
