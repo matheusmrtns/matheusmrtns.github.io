@@ -14,6 +14,13 @@ footer button a:hover {
 	font-weight: 100;
 }
 
+html {
+	scroll-behavior: smooth;
+	/* width: 100vw; */
+	overflow-x:hidden;
+}
+
+
 body {
 	width: 100%;
 	background-color: #fcfcfc;
@@ -105,6 +112,21 @@ ul {
 	
     list-style-type: none;
 }
+
+#back {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
+
+#w_background {
+	margin: auto;
+	z-index: -1;
+	width: 1920px;
+	opacity: 1;
+	transition: .4s ease;
+}
 	
 header {
 	height: 800px;
@@ -136,6 +158,16 @@ header {
 	width: 300px;
 	position: absolute;
 	top: 325px;
+	opacity: 0;
+	transition: .4s ease;
+}
+
+#icon:hover {
+	opacity: 1;
+}
+
+#icon:hover > #w_background {
+	opacity: 0;
 }
 
 #icon img {	pointer-events: none; }
@@ -547,12 +579,6 @@ article:hover #bline {
 #dvid {
 	width: 550px;
 	margin-top: 210px;
-}
-
-html {
-	scroll-behavior: smooth;
-	width: 100vw;
-	overflow-x:hidden;
 }
 
 /* @media screen and (min-resolution: 120dpi) { 
