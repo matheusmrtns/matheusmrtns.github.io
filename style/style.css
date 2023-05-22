@@ -118,6 +118,7 @@ ul {
 	position: absolute;
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 }
 
 #w_background {
