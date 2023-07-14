@@ -22,7 +22,7 @@ html {
 
 
 body {
-	width: 100%;
+	width: 100vw;
 	background-color: #fcfcfc;
 }	
 
@@ -79,7 +79,7 @@ body {
 }
 	
 ::-webkit-scrollbar-thumb:hover {
-  background: black;
+  background: grey;
 }
 
 /*links*/
@@ -96,12 +96,6 @@ a:active {
 .text {
 	font-family: 'ClashDisplay-Semibold', sans-serif; 
 	}
-	
-.weight {
-	font-family: stolzl, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-}
 
 .color {
 	
@@ -179,15 +173,15 @@ header {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  transition: .4s ease;
   height: 100%;
   width: 100%;
+   	transition: .8s ease;
  } 
 
  .dotty {
   display: inline-block;
   position: absolute;
-  transition: .3s ease;
+  transition: .8s ease;
   height: 100%;
   width: 100%;
  } 
@@ -197,6 +191,7 @@ header {
  }
 
  #dot1 {
+
   left: 0;
   top: 0;
   /*animation-name: example;
@@ -391,11 +386,19 @@ header {
   top: 1%;
  }
 
- #doth10:hover #dot10{
+ #doth10:hover #dot10 {
  	height: 51%;
  	width: 102%;
  	left: -1%;
  	top: 12%;
+ }
+
+ .doth:hover .dot {
+ 	transition: .3s ease;
+ }
+
+ .doth:hover .dotty {
+ 	transition: .28s ease;
  }
 
 #logo {
@@ -443,8 +446,11 @@ header {
 	margin-right: 260px;
 }
 
-section {
+#content {
 	display: flex;
+	width: 100vw;
+	position: relative;
+	justify-content: center;
 }
 
 #grid {
@@ -463,12 +469,16 @@ article {
 	margin-bottom: 100px;
 }
 
-article:hover #block{
+article:hover #block {
 	height: 89%;
 }
 
-article:hover img{
+article:hover .blockimg {
 	opacity: 0.9;
+}
+
+article:hover #blocklogo {
+	opacity: 1;
 }
 
 article:hover figcaption {
@@ -488,6 +498,16 @@ article img {
 	overflow:hidden;
 	transition: .3s ease;
 	border-radius: 15px;
+}
+
+#blocklogo {
+	width: 35px;
+	position: absolute;
+	left: 4%;
+	top: 3%;
+	z-index: 1;
+	transition: .3s ease;
+	opacity: 0;
 }
 
 figcaption {
@@ -518,6 +538,21 @@ article:hover #bline {
 .desc {
 	font-family: 'ClashDisplay-Regular';
 	font-size: 14pt;
+}
+
+.textbox {
+	width: 510px;
+	margin-bottom: 130px;
+}
+
+.ptext {
+	font-family: 'ClashDisplay-Regular', sans-serif;
+	font-size: 13pt;
+	line-height: 23pt;
+}
+
+.bold {
+	font-family: 'ClashDisplay-Semibold', sans-serif;
 }
 
 #logo2 {
@@ -552,11 +587,6 @@ article:hover #bline {
 	margin-left: 5px;
 }
 
-#content {
-	width: 100%;
-	position: relative;
-}
-
 #videoH , #videoL , #videoV{
 	margin: auto;
 }
@@ -572,11 +602,6 @@ article:hover #bline {
 
 #videoV {
 	display: none;
-}
-
-#dvid {
-	width: 550px;
-	margin-top: 210px;
 }
 
 /* @media screen and (min-resolution: 120dpi) { 

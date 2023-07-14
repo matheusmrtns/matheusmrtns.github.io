@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('../fonts/ClashDisplay-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+#workpage {
+	width: 55vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+}
+
+#dvid {
+	width: 100%;
+	height: 600px;
+	margin-top: 180px;
+	margin-bottom: 190px;
+}
+
+#DFlogo {
+	background-color: #21201d;
+	width: 1920px;
+	height: 21vw;
+	margin-bottom: 130px;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+}
+
+#logo_1DF {
+	width: 350px;
+}
+
+#DFposters {
+	width: 100%;
+	height: 35vw;
+	margin-bottom: 130px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sqimg {
+	height: 100%;
+	width: 400px;
+}
+
+.poster {
+	width: 100%;
+	margin-bottom: 20px;
+}
