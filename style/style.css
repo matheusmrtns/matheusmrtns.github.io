@@ -685,7 +685,7 @@ header {
 }
 
 #ov {
-	height: 90vh;
+	height: 70vh;
 	width: 300px;
 	position: relative;
 	display: block;
@@ -709,7 +709,7 @@ header {
 
 #iconV {
 	display: block;
-	height: 90vh;
+	height: 70vh;
 	grid-column: 1;
   grid-row: 1;
 }
