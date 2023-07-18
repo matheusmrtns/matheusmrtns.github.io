@@ -24,7 +24,7 @@ html {
 body {
 	width: 100vw;
 	background-color: #fcfcfc;
-}	
+}
 
 ::-moz-selection { background: SpringGreen; }
 ::selection { background: SpringGreen; }
@@ -59,6 +59,7 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+
 /*scrollbar*/
 
 /* width */
@@ -68,8 +69,9 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: #dbdbdb;
-  border-radius: 10px;
+	background-color: transparent;
+  /*background-color: #dbdbdb;
+  border-radius: 10px;*/
 }
 
 /* Handle */
@@ -80,7 +82,8 @@ body {
 	
 ::-webkit-scrollbar-thumb:hover {
   background: grey;
-}
+} 
+
 
 /*links*/
 
@@ -122,13 +125,26 @@ ul {
 }
 	
 header {
-	height: 800px;
+	height: 1000px;
 	display: flex;
 	justify-content: center;
 	margin: auto;
+	width: 100vw;
 }
 
 #navbar {
+	height: 80px;
+	width: 100vw;
+	position: fixed;
+	top: -80px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	z-index: 1;
+	transition: top 0.3s;
+}
+
+#navbarwork {
 	height: 80px;
 	width: 100vw;
 	position: fixed;
@@ -137,36 +153,41 @@ header {
 	justify-content: left;
 	align-items: center;
 	z-index: 1;
-	transition: top 0.3s;
 }
 
+
 #navlogo {
-	width: 75px;
+	width: 65px;
 	margin-left: 30px;
 }
 
-#icon {
-	margin: auto;
-	width: 300px;
+#ov {
+	mix-blend-mode: lighten;
+	z-index: 1;
+	pointer-events: none;
+	object-fit: cover;
+	width: 1000px;
 	position: absolute;
-	top: 325px;
-	opacity: 0;
+	top: 150px;
+}
+
+#iconH {
+	margin: auto;
+	width: 800px;
+	position: absolute;
+	top: 300px;
 	transition: .4s ease;
 }
 
-#icon:hover {
-	opacity: 1;
-}
-
-#icon:hover > #w_background {
-	opacity: 0;
+#iconV {
+	display: none;
 }
 
 #icon img {	pointer-events: none; }
 
 .st1 , .dot , .dotty {
-	fill:#333333;
-	background-color: #333333;
+	fill:black;
+	background-color: black;
 }
 
 .dot {
@@ -175,13 +196,13 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-   	transition: .8s ease;
+   	transition: 1s ease;
  } 
 
  .dotty {
   display: inline-block;
   position: absolute;
-  transition: .8s ease;
+  transition: 1s ease;
   height: 100%;
   width: 100%;
  } 
@@ -210,7 +231,7 @@ header {
  	height: 46.2%;
   width: 18.666%;
   left: 0;
-  top: 0;
+  top: 1%;
  }
 
  #doth1:hover #dot1{
@@ -228,8 +249,8 @@ header {
  #doth2 {
  	height: 46.2%;
   width: 18.666%;
-  left: 0;
-  bottom: 3.2%;
+  left: 0.1%;
+  bottom: 2.7%;
  }
 
  #doth2:hover #dot2{
@@ -246,7 +267,7 @@ header {
  	height: 46.2%;
   width: 18.666%;
   left: 40.666%;
-  top: 0;
+  top: 1%;
  }
 
  #doth3:hover #dot3{
@@ -265,7 +286,7 @@ header {
  	height: 46.2%;
   width: 18.666%;
   left: 20.333%;
-  bottom: 3.3%;
+  bottom: 2.5%;
  }
 
  #doth4:hover #dot4{
@@ -280,11 +301,11 @@ header {
  	right: 0;
  }
 
- #doth5{
+ #doth5 {
  	height: 46.2%;
   width: 18.666%;
   left: 61%;
-  bottom: 3.3%;
+  bottom: 2.5%;
  }
 
  #doth5:hover #dot5{
@@ -299,11 +320,11 @@ header {
  	right: 0;
  }
 
- #doth6{
+ #doth6 {
  	height: 46.2%;
   width: 18.666%;
   left: 81.333%;
-  top: 0;
+  top: 1%;
  }
 
  #doth6:hover #dot6{
@@ -318,14 +339,14 @@ header {
  	top: 0;
  }
 
- #doth7{
+ #doth7 {
  	height: 46.2%;
   width: 18.666%;
-  right: 0;
-  bottom: 3.2%;
+  right: 0.1%;
+  bottom: 2.7%;
  }
 
- #doth7:hover #dot7{
+ #doth7:hover #dot7 {
  	height: 80.357%;
  	width: 80.357%;
  }
@@ -337,14 +358,14 @@ header {
  	height: 50%;
  }
 
- #doth8{
+ #doth8 {
  	height: 48%;
   width: 18.666%;
   left: 40.666%;
   bottom: 3.2%;
  }
 
- #doth8:hover #dot8{
+ #doth8:hover #dot8 {
  	height: 51%;
  	width: 102%;
  	left: -1%;
@@ -359,13 +380,13 @@ header {
  }
 
  #doth9 {
- 	height: 48%;
-  width: 18.666%;
-  left: 20.333%;
-  top: 1%;
+ 	height: 50%;
+  width: 18.9%;
+  left: 20.2%;
+  top: 1.4%;
  }
 
- #doth9:hover #dot9{
+ #doth9:hover #dot9 {
  	height: 51%;
  	width: 102%;
  	left: -1%;
@@ -380,10 +401,10 @@ header {
  }
 
  #doth10 {
- 	height: 48%;
-  width: 18.666%;
-  left: 61%;
-  top: 1%;
+ 	height: 50%;
+  width: 18.9%;
+  left: 60.93%;
+  top: 1.4%;
  }
 
  #doth10:hover #dot10 {
@@ -451,6 +472,7 @@ header {
 	width: 100vw;
 	position: relative;
 	justify-content: center;
+	margin: auto;
 }
 
 #grid {
@@ -555,6 +577,13 @@ article:hover #bline {
 	font-family: 'ClashDisplay-Semibold', sans-serif;
 }
 
+.band {
+	width: 100vw;
+	height: 400px;
+	flex-shrink: 0;
+	display: flex;
+}
+
 #logo2 {
 	height: 70px;
 	display: flex;	
@@ -593,6 +622,10 @@ article:hover #bline {
 
 #videoH video {
 	max-width: 1920px;
+	width: 100%;
+}
+
+#videoOV video {
 	width: 100%;
 }
 
@@ -639,8 +672,51 @@ article {
 @media only screen and (max-width: 990px) {
 
 
-footer , .language , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
+footer , #iconH , .language , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
 	display:none;
+}
+
+header {
+	align-items: center;
+	height: 100vh;
+	margin-bottom: 10%;
+	display: grid;
+	overflow: clip;
+}
+
+#ov {
+	height: 90vh;
+	width: 300px;
+	position: relative;
+	display: block;
+	top: 0;
+	grid-column: 1;
+  grid-row: 1;
+}
+
+#videoOV {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+#videoOV video {
+	width: auto;
+	height: 100%;
+}
+
+#iconV {
+	display: block;
+	height: 90vh;
+	grid-column: 1;
+  grid-row: 1;
+}
+
+#iconVimg {
+	object-fit: cover;
+	height: 100%;
 }
 	
 figcaption {

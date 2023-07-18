@@ -35,11 +35,7 @@
 
 #DFlogo {
 	background-color: #21201d;
-	width: 1920px;
-	height: 21vw;
 	margin-bottom: 130px;
-	flex-shrink: 0;
-	display: flex;
 	justify-content: center;
 }
 

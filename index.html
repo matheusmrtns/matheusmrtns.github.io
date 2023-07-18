@@ -9,32 +9,34 @@
   <link rel="icon" src=".images/favicon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/nuz3ilo.css">
   <link rel="icon" href="./images/favicon.ico">
 </head>
 
 <body>
 
-<div id="back">
+<!--<div id="back">
 <img id="w_background" src="./images/w_background.jpg">
-</div>
+</div>-->
 
 <header>
-	<!--<a href="./about.html">
-	<div id="logo">
-		<img id="matheus" src="./images/matheus.svg">
-		<div id="line3"></div>
-		<img id="martins" src="./images/martins.svg">
-	</div>
-	</a>-->
-<nav id="navbar">
-	<a href="./index.html">
-		<img id="navlogo" src="./images/M_logo_NORMAL.svg">
-	</a>
-</nav>
-<div id="icon">
-	<!--<img draggable="false" class="noselect" src="./images/M_logo_BIG.svg">-->
-	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+	<nav id="navbar">
+		<a href="./index.html">
+			<img id="navlogo" src="./images/M_logo_NORMAL.svg">
+		</a>
+	</nav>
+
+	<div id="ov">
+		<div id="videoOV">
+      <video autoplay muted loop>
+	    <source src="./images/ovtest.mp4" type="video/mp4" />
+	    video not found
+	 		</video>
+		</div>
+	</div>	
+
+	<div id="iconH">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1080 421.8" style="enable-background:new 0 0 1080 421.8;" xml:space="preserve">
 		<path class="st1" d="M969.7,218.5L969.7,218.5c-2.2-0.3-4.5-0.6-6.9-1c-1.1-0.2-2.3-0.4-3.5-0.6H959c-12.1-1.9-23.6-5.6-34.1-10.9
 		c-10.3-5.2-19.8-11.8-28.1-19.7l-3.4-3.4c-0.9-0.9-1.9-1.9-2.7-2.9c-0.1,0-0.1-0.1-0.1-0.1c-0.3-0.3-0.6-0.6-0.9-0.9
@@ -79,18 +81,24 @@
 		c0.6,0.6,1.1,1.3,1.6,1.9c5.3,6.5,9.9,13.6,13.6,21.2c5.3,10.6,9,22,10.9,34.2v0.3c0.4,1.9,0.7,3.8,0.9,5.6v0.1
 		c0.1,0.8,0.2,1.6,0.4,2.4c6,37.9,38.8,66.9,78.4,66.9c43.9,0,79.4-35.6,79.4-79.4C1034.4,257.7,1006.5,225.4,969.7,218.5z"/>
 		</svg>
-	<span class="doth" id="doth1"><span class="dot" id="dot1"></span></span>
-	<span class="doth" id="doth2"><span class="dot" id="dot2"></span></span>
-	<span class="doth" id="doth3"><span class="dot" id="dot3"></span></span>
-	<span class="doth" id="doth4"><span class="dot" id="dot4"></span></span>
-	<span class="doth" id="doth5"><span class="dot" id="dot5"></span></span>
-	<span class="doth" id="doth6"><span class="dot" id="dot6"></span></span>
-	<span class="doth" id="doth7"><span class="dot" id="dot7"></span></span>
-	<span class="doth" id="doth8"><span class="dotty" id="dot8"></span></span>
-	<span class="doth" id="doth9"><span class="dotty" id="dot9"></span></span>
-	<span class="doth" id="doth10"><span class="dotty" id="dot10"></span></span>
+		<span class="doth" id="doth1"><span class="dot" id="dot1"></span></span>
+		<span class="doth" id="doth2"><span class="dot" id="dot2"></span></span>
+		<span class="doth" id="doth3"><span class="dot" id="dot3"></span></span>
+		<span class="doth" id="doth4"><span class="dot" id="dot4"></span></span>
+		<span class="doth" id="doth5"><span class="dot" id="dot5"></span></span>
+		<span class="doth" id="doth6"><span class="dot" id="dot6"></span></span>
+		<span class="doth" id="doth7"><span class="dot" id="dot7"></span></span>
+		<span class="doth" id="doth8"><span class="dotty" id="dot8"></span></span>
+		<span class="doth" id="doth9"><span class="dotty" id="dot9"></span></span>
+		<span class="doth" id="doth10"><span class="dotty" id="dot10"></span></span>
 	</div>
+
+	<div id="iconV">
+		<img id="iconVimg" src="./images/M_logo_BIG_B.svg">
+	</div>
+
 </header>
+
 <section id="content">
   <div id="grid" class="text color">
 
@@ -217,18 +225,19 @@
 
 <script type="text/javascript">
 
-	window.onscroll = function() {scrollFunction()};
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
 
-function scrollFunction() {
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-80px";
-  }
+            if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
+                navbar.style.top = '0'; // Slide the navbar down
+                
+            } else {
+                navbar.style.top = '-80px'; // Slide the navbar offscreen
+                
+            }
+        });
 
-}
-
-
+				
 
 </script>
 
