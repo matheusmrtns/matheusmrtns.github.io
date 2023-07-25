@@ -125,9 +125,10 @@ ul {
 }
 	
 header {
-	height: 1000px;
-	display: flex;
+	height: 100vh;
+	display: grid;
 	justify-content: center;
+	align-items: center;
 	margin: auto;
 	width: 100vw;
 }
@@ -167,16 +168,18 @@ header {
 	pointer-events: none;
 	object-fit: cover;
 	width: 1000px;
-	position: absolute;
-	top: 150px;
+	position: relative;
+	grid-column: 1;
+  grid-row: 1;
 }
 
 #iconH {
 	margin: auto;
 	width: 800px;
-	position: absolute;
-	top: 300px;
+	position: relative;
 	transition: .4s ease;
+	grid-column: 1;
+  grid-row: 1;
 }
 
 #iconV {
@@ -680,7 +683,6 @@ header {
 	align-items: center;
 	height: 90vh;
 	margin-bottom: 5%;
-	display: grid;
 	overflow: clip;
 }
 
@@ -689,7 +691,6 @@ header {
 	width: 300px;
 	position: relative;
 	display: block;
-	top: 0;
 	grid-column: 1;
   grid-row: 1;
 }
