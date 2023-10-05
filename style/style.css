@@ -177,6 +177,7 @@ header {
 	margin: auto;
 	width: 800px;
 	position: relative;
+	top: -2vh;
 	transition: .4s ease;
 	grid-column: 1;
   grid-row: 1;
@@ -522,17 +523,7 @@ article img {
 	background-color: white;
 	overflow:hidden;
 	transition: .3s ease;
-	border-radius: 15px;
-}
-
-#blocklogo {
-	width: 35px;
-	position: absolute;
-	left: 4%;
-	top: 3%;
-	z-index: 1;
-	transition: .3s ease;
-	opacity: 0;
+	border-radius: 8px;
 }
 
 figcaption {
