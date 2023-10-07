@@ -183,10 +183,6 @@ header {
   grid-row: 1;
 }
 
-#iconV {
-	display: none;
-}
-
 #icon img {	pointer-events: none; }
 
 .st1 , .dot , .dotty {
@@ -666,7 +662,7 @@ article {
 @media only screen and (max-width: 990px) {
 
 
-footer , #iconH , .language , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
+footer , .language , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
 	display:none;
 }
 
@@ -696,18 +692,6 @@ header {
 
 #videoOV video {
 	width: auto;
-	height: 100%;
-}
-
-#iconV {
-	display: block;
-	height: 70vh;
-	grid-column: 1;
-  grid-row: 1;
-}
-
-#iconVimg {
-	object-fit: cover;
 	height: 100%;
 }
 	
