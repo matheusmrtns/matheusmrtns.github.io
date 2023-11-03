@@ -569,9 +569,10 @@ article:hover #bline {
 
 .band {
 	width: 100vw;
-	height: 400px;
 	flex-shrink: 0;
 	display: flex;
+	margin-bottom: 130px;
+	justify-content: center;
 }
 
 #logo2 {
@@ -662,7 +663,7 @@ article {
 @media only screen and (max-width: 990px) {
 
 
-footer , .language , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
+footer , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
 	display:none;
 }
 
