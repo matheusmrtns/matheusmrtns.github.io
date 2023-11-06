@@ -54,15 +54,8 @@
 	padding: 100px 0;
 }
 
-.sqimg {
-	height: 100%;
-	width: 360px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .poster {
-	width: 100%;
+	width: 360px;
 }
 
 #ptposter {
@@ -100,4 +93,39 @@
 	position: absolute;
 	bottom: 20px;
 	right: 0px;
+}
+
+#DFstat {
+	max-width: 1400px;
+}
+
+#palette1 {display: block;}
+
+#palette2 {display: none;}
+
+@media only screen and (max-width: 990px) {
+
+	#palette1 {display: none;}
+
+	#palette2 {display: block;}
+
+	#DFlogo {
+		height: 480px;
+	}
+
+	#logo_1DF {
+		width: 450px;
+	}
+
+	#DFposters {
+	width: 700px;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+}
+
+	.poster {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
 }

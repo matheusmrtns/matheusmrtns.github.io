@@ -752,4 +752,13 @@ article:hover figcaption {
 	width: 100%;
 }
 
+.ptext {
+	font-size: 3.5vw;
+	line-height: 4.7vw;
+}
+
+.textbox {
+	width: 700px;
+}
+
 }	
