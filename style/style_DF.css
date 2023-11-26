@@ -95,15 +95,17 @@
 	right: 0px;
 }
 
-#DFstat {
+#one_im {
 	max-width: 1400px;
 }
+
+#DFstatV {display: none;}
 
 #palette1 {display: block;}
 
 #palette2 {display: none;}
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 957px) {
 
 	#palette1 {display: none;}
 
@@ -126,6 +128,20 @@
 	.poster {
 		width: 100%;
 		margin-bottom: 100px;
+	}
+
+	#DFstatH {
+		display: none;
+	}
+
+	#DFstatV {
+		display: block;
+		width: 700px;
+		margin-top: 100px;
+	}
+
+	#palette {
+		margin-bottom: 0;
 	}
 
 }
