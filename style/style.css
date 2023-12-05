@@ -167,15 +167,16 @@ header {
 	z-index: 1;
 	pointer-events: none;
 	object-fit: cover;
-	width: 1000px;
+	width: 100%;
 	position: relative;
 	grid-column: 1;
   grid-row: 1;
+  margin: auto;
 }
 
 #iconH {
 	margin: auto;
-	width: 800px;
+	width: 1200px;
 	position: relative;
 	top: -2vh;
 	transition: .4s ease;
@@ -212,7 +213,6 @@ header {
  }
 
  #dot1 {
-
   left: 0;
   top: 0;
   animation-name: Adot1;
@@ -223,9 +223,8 @@ header {
  }
 
  @keyframes Adot1 {
-  0%   {left: 0px; top: 0px; height: 100%; width: 100%;}
+  0%,100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
   50%   {left: 9%; top: 9%; height: 90%; width: 90%;}
-  100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
  }
 
  #doth1 {
@@ -281,9 +280,8 @@ header {
  }
 
  @keyframes Adot3 {
-  0%   {left: 0px; top: 0px; height: 100%; width: 100%;}
+  0%,100%  {left: 0px; top: 0px; height: 100%; width: 100%;}
   50%   {left: 6%; top: 10%; height: 90%; width: 90%;}
-  100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
  }
 
  #doth3{
@@ -772,6 +770,10 @@ header {
 	height: 90vh;
 	margin-bottom: 5%;
 	overflow: clip;
+}
+
+#iconH {
+	width: 800px;
 }
 
 #ov {
