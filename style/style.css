@@ -756,6 +756,10 @@ article {
 	width: 430px;
 }
 
+#iconH {
+	width: 900px;
+}
+
 }
 
 @media only screen and (max-width: 980px) {
@@ -773,12 +777,11 @@ header {
 }
 
 #iconH {
-	width: 800px;
+	width: 80%;
 }
 
 #ov {
 	height: 70vh;
-	width: 300px;
 	position: relative;
 	display: block;
 	grid-column: 1;
@@ -790,11 +793,6 @@ header {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100%;
-}
-
-#videoOV video {
-	width: auto;
 	height: 100%;
 }
 	
