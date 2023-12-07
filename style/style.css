@@ -98,20 +98,6 @@ ul {
 	
     list-style-type: none;
 }
-
-#back {
-	width: 100vw;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-}
-
-#w_background {
-	margin: auto;
-	z-index: -1;
-	width: 1920px;
-}
 	
 header {
 	height: 100vh;
@@ -124,7 +110,7 @@ header {
 
 #intro {
 	text-align: center;
-	margin-bottom: 300px;
+	margin-bottom: 200px;
 }
 
 h1 {
@@ -168,6 +154,7 @@ h2 {
 #navlogo {
 	width: 65px;
 	margin-left: 30px;
+
 }
 
 #ov {
@@ -180,6 +167,7 @@ h2 {
 	grid-column: 1;
   grid-row: 1;
   margin: auto;
+  transition: .4s ease;
 }
 
 #iconH {
@@ -782,10 +770,15 @@ header {
 	height: 90vh;
 	margin-bottom: 5%;
 	overflow: clip;
+} 
+
+#navlogo {
+	width: 150px;
+	margin-left: 30px;
 }
 
 #iconH {
-	width: 90%;
+	width: 100%;
 }
 
 #ov {
@@ -804,11 +797,11 @@ header {
 	height: 100%;
 }
 
-#intro {margin-bottom: 400px;}
+#intro {margin-bottom: 100px;}
 
 h1 {
 	font-size: 57pt;
-	line-height: 50pt;
+	line-height: 53pt;
 }
 
 h2 {

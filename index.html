@@ -230,17 +230,36 @@
 
 <script type="text/javascript">
 
-        window.addEventListener('scroll', function() {
-            var navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    var iconH = document.getElementById('iconH');
+    var overlay = document.getElementById('ov');
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-            if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
-                navbar.style.top = '0'; // Slide the navbar down
-                
-            } else {
-                navbar.style.top = '-80px'; // Slide the navbar offscreen
-                
-            }
-        });
+    if (screenWidth > 980) {
+        if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
+            navbar.style.top = '0'; // Slide the navbar down
+        } else {
+            navbar.style.top = '-80px'; // Slide the navbar offscreen
+        }
+
+        if (window.scrollY > 400 || document.documentElement.scrollTop > 400) {
+            iconH.style.opacity = '0'; // Immediate hiding for iconH
+            overlay.style.opacity = '0'; // Immediate hiding for overlay
+        } else {
+            iconH.style.opacity = '1'; // Immediate appearance for iconH
+            overlay.style.opacity = '1'; // Immediate appearance for overlay
+        }
+    } else {
+        if (window.scrollY > 1000 || document.documentElement.scrollTop > 1000) {
+            navbar.style.top = '25px'; // Slide the navbar down 50px more for smaller screens
+        } else {
+            navbar.style.top = '-80px'; // Slide the navbar offscreen for smaller screens
+        }
+    }
+});
+
+
 
 </script>
 
