@@ -234,6 +234,7 @@ window.addEventListener('scroll', function() {
     var navbar = document.getElementById('navbar');
     var iconH = document.getElementById('iconH');
     var overlay = document.getElementById('ov');
+    var content = document.getElementById('content');
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     if (screenWidth > 980) {
@@ -243,13 +244,20 @@ window.addEventListener('scroll', function() {
             navbar.style.top = '-80px'; // Slide the navbar offscreen
         }
 
-        if (window.scrollY > 400 || document.documentElement.scrollTop > 400) {
+        if (window.scrollY > 500 || document.documentElement.scrollTop > 500) {
             iconH.style.opacity = '0'; // Immediate hiding for iconH
             overlay.style.opacity = '0'; // Immediate hiding for overlay
         } else {
             iconH.style.opacity = '1'; // Immediate appearance for iconH
             overlay.style.opacity = '1'; // Immediate appearance for overlay
         }
+
+        if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
+            content.style.opacity = '1'; 
+        } else {
+            content.style.opacity = '0';
+        }
+
     } else {
         if (window.scrollY > 1000 || document.documentElement.scrollTop > 1000) {
             navbar.style.top = '25px'; // Slide the navbar down 50px more for smaller screens

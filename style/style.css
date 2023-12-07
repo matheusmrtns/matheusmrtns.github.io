@@ -567,6 +567,7 @@ h2 {
 	position: relative;
 	justify-content: center;
 	margin: auto;
+	transition: .4s ease;
 }
 
 #grid {
