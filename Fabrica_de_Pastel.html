@@ -11,32 +11,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/nuz3ilo.css">
   <link rel="icon" href="./images/favicon.svg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="./script/work_scroll.js"></script>
 </head>
 
 <body>
 
-<nav>
-	<a href="./index.html">
-		<div id="logo2">
-			<img id="matheus2" src="./images/matheus.svg">
-			<div id="line2"></div>
-			<img id="martins2" src="./images/martins.svg">
-	 </div>
-	</a>
-</nav>
+	<div class="ball" id="cursor"></div>
 
-<section>
-	<div id="videoH">
-      <video autoplay muted loop>
-	    <source src="./images/pageimages/Pastel_H.mp4" type="video/mp4" />
-	    video not found
-	 		</video>
-	</div>
-      <video autoplay muted loop id="videoV">
-	    <source src="./images/pageimages/Pastel_V.mp4" type="video/mp4" />
-	    video not found
-	 		</video>
-</section>
+	<nav id="navbar">
+		<a href="./index.html">
+			<img id="navlogo" src="./images/M_logo_NORMAL.svg">
+		</a>
+	</nav>
+
+	<section>
+
+		<div id="videoH">
+    	<video autoplay muted loop>
+	  	<source src="./images/pageimages/Pastel_H.mp4" type="video/mp4" />
+	  	video not found
+	 	 </video>
+		</div>
+
+  	<video autoplay muted loop id="videoV">
+	  	<source src="./images/pageimages/Pastel_V.mp4" type="video/mp4" />
+	  	video not found
+		</video>
+
+		<div id="title_w" class="title text color">
+			<h1>Fábrica de Pastel</h1>
+			<h2>2021&ensp;·&ensp;Lisbon, Portugal</h2>
+			<br><br>
+			<span id="subtitle_W"><h2>3D Modelling &ensp;·&ensp; Texturing &ensp;·&ensp; Animation</h2></span>
+		</div>
+
+	</section>
+
+	<style type="text/css"> #navbar { top: 0; } </style>
+
+	<script src="./script/cursor.js"></script>
 
 </body>
 </html>

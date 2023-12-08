@@ -7,12 +7,27 @@ html {
 	scroll-behavior: smooth;
 	width: 100vw;
 	overflow-x:hidden;
+	cursor: none;
 }
-
 
 body {
 	width: 100vw;
 	background-color: #fcfcfc;
+}
+
+ .ball {
+ 	width: 50px;
+  height: 50px;
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  top: var(--y, 0);
+  left: var(--x, 0);
+  background: transparent;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 ::-moz-selection { color: lightgrey; }
@@ -79,6 +94,8 @@ body {
 a:link, a:visited {
 	text-decoration: none;
 	color: black;
+  cursor: none;
+
 }
 
 a:active {
@@ -108,7 +125,7 @@ header {
 	width: 100vw;
 }
 
-#intro {
+.title {
 	text-align: center;
 	margin-bottom: 200px;
 }
@@ -127,6 +144,10 @@ h2 {
 	line-height: 80pt;
 }
 
+#title_w {margin-top: 150px;}
+
+#subtitle_W {padding-top: 50px;}
+
 #navbar {
 	height: 80px;
 	width: 100vw;
@@ -139,22 +160,9 @@ h2 {
 	transition: top 0.3s;
 }
 
-#navbarwork {
-	height: 80px;
-	width: 100vw;
-	position: fixed;
-	top: 0;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	z-index: 1;
-}
-
-
 #navlogo {
 	width: 65px;
 	margin-left: 30px;
-
 }
 
 #ov {
@@ -532,38 +540,6 @@ h2 {
  	transition: .28s ease;
  }
 
-#logo {
-	margin-top: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-flow: column nowrap;
-	justify-content: center;
-}
-
-#logo:hover #matheus {
-	margin-bottom: 13px;
-}
-
-#logo:hover #martins {
-	margin-top: 13px;
-}
-
-#logo:hover #line3 {
-	height: 90px;
-}
-
-#matheus {
-	width: 150px;
-	margin-bottom: 5px;
-	transition: .4s ease;
-}
-
-#martins {
-	width: 133px;
-	margin-left: 9px;
-	transition: .4s ease;
-}
-
 #line3 {
 	width: 0px;
 	height: 0px;
@@ -630,7 +606,7 @@ article img {
 	background-color: white;
 	overflow:hidden;
 	transition: .3s ease;
-	border-radius: 8px;
+	border-radius: 7px;
 }
 
 figcaption {
@@ -686,43 +662,19 @@ article:hover #bline {
 	justify-content: center;
 }
 
-#logo2 {
-	height: 70px;
-	display: flex;	
-}
-
-#line2 {
-	width: 0px;
-	height: 0px;
-	border-bottom: 1px solid rgb(0, 0, 0);
-	transition: .4s ease;
-	position: relative;
-	top: 35px;
-}
-
-#logo2:hover #line2 {
-	width: 100px;
-	margin-right: 5px;
-	margin-left: 5px;
-}
-
-#matheus2 {
-	width: 150px;
-	margin-right: 5px;
-}
-
-#martins2 {
-	width: 133px;
-	transition: .2s ease;
-	margin-top: 2px;
-	margin-left: 5px;
-}
-
 #videoH , #videoL , #videoV{
 	margin: auto;
 }
 
+#videoH {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
 #videoH video {
+	position: absolute;
+	bottom: 0;
 	max-width: 1920px;
 	width: 100%;
 }
@@ -790,8 +742,8 @@ header {
 } 
 
 #navlogo {
-	width: 150px;
-	margin-left: 30px;
+	width: 130px;
+	margin-left: 40px;
 }
 
 #iconH {
@@ -819,7 +771,7 @@ header {
 	height: 100%;
 }
 
-#intro {margin-bottom: 100px;}
+#intro {margin-bottom: 150px;}
 
 h1 {
 	font-size: 57pt;
@@ -852,6 +804,7 @@ figcaption {
 #block {
 	background-color: transparent;
 	height: 100%;
+	border-radius: 10px;
 }
 
 article {

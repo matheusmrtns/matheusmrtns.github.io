@@ -11,9 +11,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="icon" href="./images/favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 
 <body>
+
+<div class="ball" id="cursor"></div>
 
 <nav id="navbar">
 		<a href="./index.html">
@@ -150,7 +153,7 @@
 
 </header>
 
-<div id="intro" class="text color">
+<div id="intro" class="title text color hoverable">
 
 		<h1>Matheus Martins</h1>
 		<h2>Curated by Matheus Martins</h2>
@@ -161,7 +164,7 @@
 		<br>
 		Illustration</h1>
 
-	</div>
+</div>
 
 <section id="content">
   <div id="grid" class="text color">
@@ -287,6 +290,8 @@
   </div>
 </section>
 
+
+
 <script type="text/javascript">
 
 window.addEventListener('scroll', function() {
@@ -299,8 +304,10 @@ window.addEventListener('scroll', function() {
     if (screenWidth > 980) {
         if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
             navbar.style.top = '0'; // Slide the navbar down
+            content.style.opacity = '1';
         } else {
             navbar.style.top = '-80px'; // Slide the navbar offscreen
+            content.style.opacity = '0';
         }
 
         if (window.scrollY > 500 || document.documentElement.scrollTop > 500) {
@@ -311,24 +318,24 @@ window.addEventListener('scroll', function() {
             overlay.style.opacity = '1'; // Immediate appearance for overlay
         }
 
-        if (window.scrollY > 800 || document.documentElement.scrollTop > 800) {
-            content.style.opacity = '1'; 
-        } else {
-            content.style.opacity = '0';
-        }
-
     } else {
         if (window.scrollY > 1000 || document.documentElement.scrollTop > 1000) {
             navbar.style.top = '25px'; // Slide the navbar down 50px more for smaller screens
         } else {
             navbar.style.top = '-80px'; // Slide the navbar offscreen for smaller screens
         }
+
+        if (window.scrollY > 900 || document.documentElement.scrollTop > 900) {
+            content.style.opacity = '1'; 
+        } else {
+            content.style.opacity = '0';
+        }
     }
 });
 
-
-
 </script>
+
+<script src="./script/cursor.js"></script>
 
 </body>
 </html>
