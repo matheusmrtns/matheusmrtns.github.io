@@ -730,7 +730,7 @@ article {
 @media only screen and (max-width: 980px) {
 
 
-footer , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
+footer , .ball , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
 	display:none;
 }
 

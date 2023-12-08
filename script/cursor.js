@@ -17,6 +17,7 @@ document.body.addEventListener('mousemove', function(e) {
 
 // Function for link hover effect
 function onMouseHoverLink() {
+  cursor.style.backdropFilter = 'blur(3px)';
   TweenMax.to($Ball, .3, {
     scale: 3
   });
@@ -24,6 +25,7 @@ function onMouseHoverLink() {
 
 // Function for link hover out effect
 function onMouseHoverOutLink() {
+  cursor.style.backdropFilter = 'blur(5px)';
   TweenMax.to($Ball, .3, {
     scale: 1
   });
