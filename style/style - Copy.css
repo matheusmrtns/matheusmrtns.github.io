@@ -180,17 +180,6 @@ h2 {
   grid-row: 1;
 }
 
-#iconV {
-	margin: auto;
-	width: 100%;
-	position: relative;
-	top: -2vh;
-	transition: .4s ease;
-	grid-column: 1;
-  grid-row: 1;
-  display: none;
-}
-
 #icon img {	pointer-events: none; }
 
 .st1 , .dot , .dotty {
@@ -198,16 +187,16 @@ h2 {
 	background-color: black;
 }
 
-#iconH .dot {
+.dot {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   height: 100%;
   width: 100%;
-  transition: 1s ease;
+   	transition: 1s ease;
  } 
 
- #iconH .dotty {
+ .dotty {
   display: inline-block;
   position: absolute;
   transition: 1s ease;
@@ -215,25 +204,11 @@ h2 {
   width: 100%;
  } 
 
- #iconH .doth {
+ .doth {
  	position: absolute;
- 	height: 47.8%;
-  width: 19.2%;
  }
 
- #iconH .dother {
- 	position: absolute;
- 	height: 46.2%;
-  width: 18.666%;
- }
-
- #iconH .dothy {
- 	position: absolute;
- 	height: 50%;
-  width: 18.9%;
- }
-
- #iconH #dot1 {
+ #dot1 {
   left: 0;
   top: 0;
   animation-name: Adot1;
@@ -248,21 +223,21 @@ h2 {
   50%   {left: 9%; top: 9%; height: 90%; width: 90%;}
  }
 
- #iconH #doth1 {
- 	height: 47.3%;
-  width: 19%;
-  left: 0%;
+ #doth1 {
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 0;
   top: 1%;
  }
 
- #iconH #doth1:hover #dot1{
+ #doth1:hover #dot1{
  	left: 18%;
   top: 18%;
  	height: 80%;
  	width: 80%;
  }
 
- #iconH #dot2 {
+ #dot2 {
   right: 0;
   top: 0;
   animation-name: Adot2;
@@ -278,17 +253,19 @@ h2 {
   100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
  }
 
- #iconH #doth2 {
+ #doth2 {
+ 	height: 46.2%;
+  width: 18.666%;
   left: 0.1%;
-  bottom: 2.6%;
+  bottom: 2.7%;
  }
 
- #iconH #doth2:hover #dot2{
+ #doth2:hover #dot2{
  	height: 80.357%;
  	width: 80.357%;
  }
 
- #iconH #dot3 {
+ #dot3 {
  	bottom: 0;
  	left: 0;
  	animation-name: Adot3;
@@ -300,22 +277,24 @@ h2 {
 
  @keyframes Adot3 {
   0%,100%  {left: 0px; top: 0px; height: 100%; width: 100%;}
-  50%   {left: 5%; top: 10%; height: 90%; width: 90%;}
+  50%   {left: 6%; top: 10%; height: 90%; width: 90%;}
  }
 
- #iconH #doth3{
-  left: 40.45%;
-  top: 0.8%;
+ #doth3{
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 40.666%;
+  top: 1%;
  }
 
- #iconH #doth3:hover #dot3{
+ #doth3:hover #dot3{
   bottom: 0;
   left: 10%;
  	height: 80%;
  	width: 80%;
  }
 
- #iconH #dot4 {
+ #dot4 {
  	left: 0;
  	top: 0;
  	animation-name: Adot4;
@@ -326,23 +305,26 @@ h2 {
  }
 
  @keyframes Adot4 {
-  0%,100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
+  0%   {left: 0px; top: 0px; height: 100%; width: 100%;}
   50%   {left: 6%; bottom: 9%; height: 90%; width: 90%;}
+  100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
  }
 
- #iconH #doth4{
-  left: 20%;
-  bottom: 1.8%;
+ #doth4{
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 20.333%;
+  bottom: 2.5%;
  }
 
- #iconH #doth4:hover #dot4{
+ #doth4:hover #dot4{
  	left: 10%;
   top: 0;
  	height: 80%;
  	width: 80%;
  }
 
- #iconH #dot5 {
+ #dot5 {
  	top: 0;
  	right: 0;
  	animation-name: Adot5;
@@ -353,25 +335,28 @@ h2 {
  }
 
  @keyframes Adot5 {
-  0%,100%  {left: 0px; top: 0px; height: 100%; width: 100%;}
-  50%   {left: 5.5%; bottom: 9%; height: 90%; width: 90%;}
+  0%   {left: 0px; top: 0px; height: 100%; width: 100%;}
+  50%   {left: 6%; bottom: 9%; height: 90%; width: 90%;}
+  100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
  }
 
- #iconH #doth5 {
-  left: 60.75%;
-  bottom: 1.8%;
+ #doth5 {
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 61%;
+  bottom: 2.5%;
  }
 
- #iconH #doth5:hover #dot5{
+ #doth5:hover #dot5{
  	right: 10%;
   top: 0;
  	height: 80%;
  	width: 80%;
  }
 
- #iconH #dot6 {
- 	bottom: 0;
- 	left: 0;
+ #dot6 {
+ 	top: 0;
+ 	right: 0;
  	animation-name: Adot6;
   animation-duration: 1.8s;
   animation-iteration-count: infinite;
@@ -380,25 +365,26 @@ h2 {
  }
 
  @keyframes Adot6 {
-  0%,100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
-  50%   {left: 0%; top: 8%; height: 90%; width: 90%;}
+  0%   {left: 0px; top: 0px; height: 100%; width: 100%;}
+  50%   {left: 0%; top: 9%; height: 90%; width: 90%;}
+  100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
  }
 
- #iconH #doth6 {
- 	height: 47.3%;
-  width: 19%;
-  left: 81%;
-  top: 1.2%;
+ #doth6 {
+ 	height: 46.2%;
+  width: 18.666%;
+  left: 81.333%;
+  top: 1%;
  }
 
- #iconH #doth6:hover #dot6{
- 	left: 1%;
- 	bottom: 4%;
+ #doth6:hover #dot6{
+ 	right: 18%;
+  top: 18%;
  	height: 80%;
  	width: 80%;
  }
 
- #iconH #dot7 {
+ #dot7 {
  	left: 0;
  	top: 0;
  	animation-name: Adot7;
@@ -414,17 +400,19 @@ h2 {
   100%   {left: 0px; top: 0px; height: 100%; width: 100%;}
  }
 
- #iconH #doth7 {
+ #doth7 {
+ 	height: 46.2%;
+  width: 18.666%;
   right: 0.1%;
-  bottom: 2.6%;
+  bottom: 2.7%;
  }
 
- #iconH #doth7:hover #dot7 {
+ #doth7:hover #dot7 {
  	height: 80.357%;
  	width: 80.357%;
  }
 
-  #iconH #dot8 {
+  #dot8 {
  	left: 0;
  	bottom: 0;
  	border-radius: 0% 0% 1000px 1000px;
@@ -442,21 +430,21 @@ h2 {
   100%   {left: 0px; bottom: 0px; height: 50%; width: 100%;}
  }
 
- #iconH #doth8 {
- 	height: 50%;
-  width: 18.9%;
+ #doth8 {
+ 	height: 48%;
+  width: 18.666%;
   left: 40.666%;
   bottom: 3.2%;
  }
 
- #iconH #doth8:hover #dot8 {
+ #doth8:hover #dot8 {
  	height: 51%;
  	width: 102%;
  	left: -1%;
  	bottom: 12%;
  }
 
- #iconH #dot9 {
+ #dot9 {
  	left: 0;
  	top: 0;
  	border-radius: 1000px 1000px 0% 0%;
@@ -474,21 +462,21 @@ h2 {
   100%   {left: 0px; top: 0px; height: 50%; width: 100%;}
  }
 
- #iconH #doth9 {
+ #doth9 {
  	height: 50%;
   width: 18.9%;
   left: 20.2%;
   top: 1.4%;
  }
 
- #iconH #doth9:hover #dot9 {
+ #doth9:hover #dot9 {
  	height: 51%;
  	width: 102%;
  	left: -1%;
  	top: 12%;
  }
 
- #iconH #dot10 {
+ #dot10 {
  	left: 0;
  	top: 0;
  	border-radius: 1000px 1000px 0% 0%;
@@ -506,29 +494,25 @@ h2 {
   100%   {left: 0px; top: 0px; height: 50%; width: 100%;}
  }
 
- #iconH #doth10 {
+ #doth10 {
  	height: 50%;
   width: 18.9%;
   left: 60.93%;
   top: 1.4%;
  }
 
- #iconH #doth10:hover #dot10 {
+ #doth10:hover #dot10 {
  	height: 51%;
  	width: 102%;
  	left: -1%;
  	top: 12%;
  }
 
- #iconH .doth:hover .dot {
+ .doth:hover .dot {
  	transition: .3s ease;
  }
 
- #iconH .dother:hover .dot {
- 	transition: .3s ease;
- }
-
- #iconH .dothy:hover .dotty {
+ .doth:hover .dotty {
  	transition: .28s ease;
  }
 
@@ -796,11 +780,6 @@ header {
 
 #iconH {
 	width: 100%;
-	display: none;
-}
-
-#iconV {
-	display: inline-block;
 }
 
 #ov {
