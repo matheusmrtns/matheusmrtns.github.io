@@ -18,6 +18,10 @@
        font-style: normal;
 }
 
+#navbar {
+	top: 0px !important;
+}
+
 #workpage {
 	width: 1000px;
 	display: flex;
@@ -72,6 +76,12 @@
 	position: relative;
 }
 
+.sqimg2 img {
+		width: 100%;
+		height: fit-content;
+	}
+
+
 .ptbox {
 	width: 270px;
 	line-height: 18pt;
@@ -99,15 +109,15 @@
 	max-width: 1400px;
 }
 
-#DFstatV {display: none;}
+#DFstatV , #palette2 {display: none;}
 
 #palette1 {display: block;}
 
-#palette2 {display: none;}
+ {display: none;}
 
-@media only screen and (max-width: 957px) {
+@media only screen and (max-width: 980px) {
 
-	#palette1 {display: none;}
+	#palette1 , #ptlines , #DFstatH , #ptdf , #navbar {display: none !important;}
 
 	#palette2 {display: block;}
 
@@ -120,7 +130,7 @@
 	}
 
 	#DFposters {
-	width: 700px;
+	width: 800px;
 	flex-wrap: wrap;
 	margin-bottom: 0;
 }
@@ -128,20 +138,52 @@
 	.poster {
 		width: 100%;
 		margin-bottom: 100px;
-	}
-
-	#DFstatH {
-		display: none;
+		border-radius: 10px;
 	}
 
 	#DFstatV {
 		display: block;
-		width: 700px;
+		width: 800px;
 		margin-top: 100px;
 	}
 
 	#palette {
 		margin-bottom: 0;
+		padding: 0;
 	}
+
+	.sqimg2 {
+		width: 50%;
+	}
+
+	.sqimg2 svg {
+		display: none;
+	}
+
+	.sqimg2 p {
+		font-size: 28pt;
+		line-height: 30pt;
+	}
+
+	#ptposter {
+		height: fit-content;
+		width: 100%;
+	}
+
+	#sqimg2R {
+		height: 736px;
+	}
+
+	#sqimg2L {
+		height: 653px;
+	}
+
+	.ptbox {
+		margin: auto;
+		width: 75%;
+		display: flex;justify-content: center;
+		align-items: center;
+	}
+
 
 }

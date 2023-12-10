@@ -158,10 +158,11 @@ h2 {
 	align-items: center;
 	z-index: 1;
 	transition: top 0.3s;
+	mix-blend-mode: difference;
 }
 
 #navlogo {
-	width: 65px;
+	width: 55px;
 	margin-left: 30px;
 }
 
@@ -844,12 +845,12 @@ article:hover figcaption {
 }
 
 .ptext {
-	font-size: 3vw;
-	line-height: 4.7vw;
+	font-size: 11pt;
+	line-height: 30pt;
 }
 
 .textbox {
-	width: 700px;
+	width: 800px;
 }
 
 }	

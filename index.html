@@ -7,7 +7,6 @@
   <link href="./style/style.css" type="text/css" rel="stylesheet">
   <link href="./style/mobile_animation.css" type="text/css" rel="stylesheet">
   <meta charset="UTF-8">
-  <link rel="icon" src=".images/favicon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="icon" href="./images/favicon.ico">
@@ -19,7 +18,7 @@
 <div class="ball" id="cursor"></div>
 
 <nav id="navbar">
-		<a href="./index.html">
+		<a href="#top">
 			<img id="navlogo" src="./images/M_logo_NORMAL.svg">
 		</a>
 </nav>
@@ -302,8 +301,12 @@ window.addEventListener('scroll', function() {
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     if (screenWidth > 980) {
+
+    				navbar.style.display = 'flex';
+
         if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
             navbar.style.top = '0'; // Slide the navbar down
+            
             content.style.opacity = '1';
         } else {
             navbar.style.top = '-80px'; // Slide the navbar offscreen
@@ -318,14 +321,11 @@ window.addEventListener('scroll', function() {
             overlay.style.opacity = '1'; // Immediate appearance for overlay
         }
 
-    } else {
-        if (window.scrollY > 1000 || document.documentElement.scrollTop > 1000) {
-            navbar.style.top = '25px'; // Slide the navbar down 50px more for smaller screens
-        } else {
-            navbar.style.top = '-80px'; // Slide the navbar offscreen for smaller screens
-        }
+    } else {  
 
-        if (window.scrollY > 900 || document.documentElement.scrollTop > 900) {
+        		navbar.style.display = 'none';
+        
+        if (window.scrollY > 1010 || document.documentElement.scrollTop > 1010) {
             content.style.opacity = '1'; 
         } else {
             content.style.opacity = '0';
