@@ -144,11 +144,11 @@
 	#DFstatV {
 		display: block;
 		width: 800px;
-		margin-top: 100px;
+		margin-bottom: 100px;
 	}
 
 	#palette {
-		margin-bottom: 0;
+		margin-bottom: 100px;
 		padding: 0;
 	}
 
@@ -161,7 +161,7 @@
 	}
 
 	.sqimg2 p {
-		font-size: 28pt;
+		font-size: 23pt;
 		line-height: 30pt;
 	}
 
@@ -181,7 +181,8 @@
 	.ptbox {
 		margin: auto;
 		width: 75%;
-		display: flex;justify-content: center;
+		display: flex;
+		justify-content: center;
 		align-items: center;
 	}
 
