@@ -22,14 +22,6 @@
 	top: 0px !important;
 }
 
-#workpage {
-	width: 1000px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: flex-start;
-}
-
 #dvid {
 	width: 100%;
 	height: 600px;

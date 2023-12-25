@@ -13,6 +13,7 @@ html {
 body {
 	width: 100vw;
 	background-color: #fcfcfc;
+	-webkit-text-size-adjust: none
 }
 
  .ball {
@@ -575,6 +576,14 @@ h2 {
 	width: 1400px;
 }
 
+#workpage {
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+}
+
 article {
 	width: 430px;
 	max-width: 430px;
@@ -800,7 +809,7 @@ h1 {
 }
 
 h2 {
-	font-size: 10pt;
+	font-size: 25pt;
 }
 
 #coords {
@@ -866,8 +875,8 @@ article:hover figcaption {
 }
 
 .ptext {
-	font-size: 11pt;
-	line-height: 30pt;
+	font-size: 23pt;
+	line-height: 35pt;
 }
 
 .textbox {
