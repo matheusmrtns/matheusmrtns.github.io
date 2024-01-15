@@ -31,7 +31,6 @@
 
 #DFlogo {
 	background-color: #21201d;
-	height: 400px;
 }
 
 #logo_1DF {
@@ -76,7 +75,6 @@
 
 .ptbox {
 	width: 270px;
-	line-height: 18pt;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -106,6 +104,28 @@
 #palette1 {display: block;}
 
  {display: none;}
+
+#fpB1 {
+	background-color: #d4e6e8;
+} 
+
+#fpB2 {
+	background-color: #F2DEC9;
+} 
+
+#fpB3 {
+	background-color: #D6E4CD;
+} 
+
+.fpB img {
+	height: 110%;
+}
+
+#mockupFP {
+	width: 510px;
+	margin-bottom: 130px;
+}
+
 
 @media only screen and (max-width: 980px) {
 
@@ -150,11 +170,6 @@
 
 	.sqimg2 svg {
 		display: none;
-	}
-
-	.sqimg2 p {
-		font-size: 23pt;
-		line-height: 30pt;
 	}
 
 	#ptposter {

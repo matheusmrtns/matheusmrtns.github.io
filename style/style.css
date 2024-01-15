@@ -676,6 +676,10 @@ article:hover #bline {
 	justify-content: center;
 }
 
+.bandSTD {
+	height: 400px;
+}
+
 #videoH , #videoL , #videoV{
 	margin: auto;
 }
