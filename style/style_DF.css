@@ -126,6 +126,27 @@
 	margin-bottom: 130px;
 }
 
+.sketch {
+	display: flex;
+	align-items: center;
+	height: 600px;
+	margin-bottom: 130px;
+}
+
+.sketch img {
+	width: 31.5vw;
+	margin-right: 100px;
+}
+
+.sketch div {
+	margin-bottom: 0;
+}
+
+#storyFP {
+	width: 700px;
+	margin-bottom: 130px;
+}
+
 
 @media only screen and (max-width: 980px) {
 
@@ -192,6 +213,27 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	.sketch {
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	height: initial;
+}
+
+.sketch img {
+	width: 680px;
+	margin-right: 0;
+	margin-top: 130px;
+}
+
+#mockupFP , #storyFP {
+	width: 800px;
+	margin-bottom: 130px;
+}
+
+.fpB {
+	margin-bottom: 170px;
+}
 
 
 }

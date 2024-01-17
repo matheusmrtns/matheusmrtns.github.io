@@ -885,7 +885,11 @@ article:hover figcaption {
 
 .textbox {
 	width: 800px;
-	margin-bottom: 100px;
+	margin-bottom: 130px;
+}
+
+.bandSTD {
+	height: 700px;
 }
 
 }	
