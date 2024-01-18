@@ -333,6 +333,35 @@ window.addEventListener('scroll', function() {
     }
 });
 
+  var isAnimationNone = false;
+
+  document.getElementById('iconH').addEventListener('click', function() {
+    var iconH = document.getElementById('iconH');
+
+    // Toggle the 'blink' class to trigger the "blink" animation
+    iconH.classList.toggle('blink');
+
+    // Get all elements inside the div with ID 'iconH'
+    var elements = iconH.querySelectorAll('*');
+
+    // Delay the execution by 0.5 seconds only for the ON click
+    setTimeout(function() {
+      // Toggle the 'animation' attribute for each element
+      elements.forEach(function(element) {
+        if (isAnimationNone) {
+          // If animation is set to none, remove the style to go back to initial animation
+          element.style.removeProperty('animation');
+        } else {
+          // If animation is not set to none, apply 'initialAnimation'
+          element.style.animation = 'initialAnimation 2s ease-in-out';
+        }
+      });
+
+      // Toggle the animation state
+      isAnimationNone = !isAnimationNone;
+    }, 600); // Delay of 0.5 seconds
+  });
+
 </script>
 
 <script src="./script/cursor.js"></script>
