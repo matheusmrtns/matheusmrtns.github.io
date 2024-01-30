@@ -636,8 +636,9 @@ article img {
 	background-color: white;
 	overflow:hidden;
 	transition: .3s ease;
-	border-radius: 7px;
 }
+
+.border {border-radius: 7px; overflow: hidden;}
 
 figcaption {
 	font-size: 20pt;
@@ -688,13 +689,15 @@ article:hover #bline {
 	width: 100vw;
 	flex-shrink: 0;
 	display: flex;
-	margin-bottom: 130px;
 	justify-content: center;
+	align-items: center;
 }
 
 .bandSTD {
 	height: 400px;
 }
+
+.marginB {margin-bottom: 130px;}
 
 #videoH , #videoL , #videoV{
 	margin: auto;
@@ -854,8 +857,9 @@ figcaption {
 #block {
 	background-color: transparent;
 	height: 100%;
-	border-radius: 10px;
 }
+
+.border {border-radius: 10px;}
 
 article {
 	margin-bottom: 27vw;

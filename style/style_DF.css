@@ -29,6 +29,33 @@
 	margin-bottom: 190px;
 }
 
+#LGFvid {
+	height:90vh;
+	margin-top: 5vh;
+	margin-bottom: 100px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	
+}
+
+#LGFvid video {
+	height:100%;
+	grid-column: 1;
+  grid-row: 1;
+}
+
+#LGFvid img {
+	width: 10%;
+	z-index: 1;
+	margin: auto;
+	text-align: center;
+	grid-column: 1;
+  grid-row: 1;
+  position: absolute;
+  top: 7%;
+}
+
 #DFlogo {
 	background-color: #21201d;
 }
@@ -117,8 +144,15 @@
 	background-color: #D6E4CD;
 } 
 
+.fpB {
+	margin-bottom: 20px;
+	position: relative;
+}
+
 .fpB img {
 	height: 110%;
+	position: absolute;
+	top: 0;
 }
 
 #mockupFP {
@@ -130,7 +164,7 @@
 	display: flex;
 	align-items: center;
 	height: 600px;
-	margin-bottom: 130px;
+	margin-bottom: 20px;
 }
 
 .sketch img {
@@ -145,6 +179,15 @@
 #storyFP {
 	width: 700px;
 	margin-bottom: 130px;
+	margin-top: 50px;
+}
+
+#W_band {
+	background-color: #4E0417;
+}
+
+#W_band img {
+	height: 130px;
 }
 
 
@@ -215,7 +258,7 @@
 	}
 
 	.sketch {
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 	justify-content: center;
 	height: initial;
 }
@@ -223,16 +266,12 @@
 .sketch img {
 	width: 680px;
 	margin-right: 0;
-	margin-top: 130px;
+	margin-bottom: 130px;
 }
 
 #mockupFP , #storyFP {
 	width: 800px;
 	margin-bottom: 130px;
-}
-
-.fpB {
-	margin-bottom: 170px;
 }
 
 }
