@@ -176,7 +176,7 @@ h2 {
 	z-index: 1;
 	pointer-events: none;
 	object-fit: cover;
-	width: 100%;
+	width: 1200px;
 	position: relative;
 	grid-column: 1;
   grid-row: 1;
@@ -726,7 +726,7 @@ article:hover #bline {
 	max-width: 750px;
 }
 
-#videoV {
+#videOV , #videoV {
 	display: none;
 }
 
@@ -809,6 +809,7 @@ header {
 }
 
 #ov {
+	width: 100%;
 	height: 70vh;
 	position: relative;
 	display: block;
