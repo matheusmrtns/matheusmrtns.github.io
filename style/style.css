@@ -13,7 +13,14 @@ html {
 body {
 	width: 100vw;
 	background-color: #fcfcfc;
-	-webkit-text-size-adjust: none
+	-webkit-text-size-adjust: none;
+	margin:auto;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 1.25), 
+(min-resolution: 120dpi){ 
+    body {zoom: 0.75;}
 }
 
  .ball {
@@ -730,9 +737,9 @@ article:hover #bline {
 	display: none;
 }
 
-/* @media screen and (min-resolution: 120dpi) { 
-body {zoom: 0.8;}
-} */
+/*@media 
+(-webkit-min-device-pixel-ratio: 1.25), 
+(min-resolution: 120dpi) { body {zoom: 0.75;} }*/
 
 @media only screen and (max-width: 1700px) {
 
