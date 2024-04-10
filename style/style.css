@@ -17,12 +17,6 @@ body {
 	margin:auto;
 }
 
-@media 
-(-webkit-min-device-pixel-ratio: 1.25), 
-(min-resolution: 120dpi){ 
-    body {zoom: 0.75;}
-}
-
  .ball {
  	width: 50px;
   height: 50px;
@@ -921,3 +915,14 @@ article:hover figcaption {
 }
 
 }	
+
+@media only screen and (min-width:981px) {
+/*style for desktop and tablet*/
+  
+  @media 
+(-webkit-min-device-pixel-ratio: 1.25), 
+(min-resolution: 120dpi){ 
+    body {zoom: 0.75;}
+}
+
+}
