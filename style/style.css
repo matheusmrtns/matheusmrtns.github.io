@@ -15,6 +15,9 @@ body {
 	background-color: #fcfcfc;
 	-webkit-text-size-adjust: none;
 	margin:auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
  .ball {
@@ -213,13 +216,6 @@ h2 {
   }
 
 #iconV {
-	margin: auto;
-	width: 100%;
-	position: relative;
-	top: -2vh;
-	transition: .4s ease;
-	grid-column: 1;
-  grid-row: 1;
   display: none;
 }
 
@@ -576,21 +572,13 @@ h2 {
 	margin-right: 260px;
 }
 
-#content {
-	display: flex;
-	width: 100vw;
-	position: relative;
-	justify-content: center;
-	margin: auto;
-	transition: .4s ease;
-}
-
 #grid {
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	width: 1400px;
+	transition: .4s ease;
 }
 
 #workpage {
@@ -599,11 +587,11 @@ h2 {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: flex-start;
+	transition: .4s ease;
 }
 
 article {
 	width: 430px;
-	max-width: 430px;
 	height: 570px;
 	position: relative;
 	margin-bottom: 100px;
@@ -613,12 +601,8 @@ article:hover #block {
 	height: 89%;
 }
 
-article:hover .blockimg {
+article:hover img {
 	opacity: 0.9;
-}
-
-article:hover #blocklogo {
-	opacity: 1;
 }
 
 article:hover figcaption {
@@ -634,9 +618,9 @@ article img {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background-color: white;
 	overflow:hidden;
 	transition: .3s ease;
+	background-color: white;
 }
 
 .border {border-radius: 7px; overflow: hidden;}
@@ -679,7 +663,7 @@ article:hover #bline {
 .ptext {
 	font-family: 'ClashDisplay-Regular', sans-serif;
 	font-size: 13pt;
-	line-height: 23pt;
+	line-height: 21pt;
 }
 
 .bold {
@@ -757,27 +741,36 @@ article:hover #bline {
 	}
 
  article {
-	height: 500px;
-	width: 375px;
+ 	height: 35vw;
+	width: 100%;
+	flex-basis: 31%;
  }
 
  #grid {
-	justify-content: space-evenly;
-	width: 98%;
+	justify-content: space-between;
+	width: 85%;
  }
 
+ #iconH {
+	width: 70vw;
+}
+
  }
 
-@media only screen and (max-width: 1326px) {
+@media only screen and (max-width: 1350px) {
 
-article {
-	height: 570px;
-	width: 430px;
+  article:hover #block {
+ 	height: 30.5vw;
+ }
+
 }
 
-#iconH {
-	width: 900px;
-}
+@media only screen and (max-width: 1100px) {
+
+
+article:hover #block {
+ 	height: 30.1vw;
+ }
 
 }
 
@@ -807,6 +800,13 @@ header {
 
 #iconV {
 	display: inline-block;
+	margin: auto;
+	width: 100%;
+	position: relative;
+	top: -2vh;
+	transition: .4s ease;
+	grid-column: 1;
+  grid-row: 1;
 }
 
 #ov {
@@ -816,6 +816,10 @@ header {
 	display: block;
 	grid-column: 1;
   grid-row: 1;
+}
+
+#workpage {
+	width: 88%;
 }
 
 #videoOV {
@@ -868,6 +872,7 @@ article {
 	width: 80vw;
 	max-width: 100%;
 	height: 106vw;
+	flex-basis: initial;
 }
 
 article:hover #block {
@@ -906,7 +911,7 @@ article:hover figcaption {
 }
 
 .textbox {
-	width: 800px;
+	width: 100%;
 	margin-bottom: 130px;
 }
 

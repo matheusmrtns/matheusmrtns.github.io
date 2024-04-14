@@ -30,23 +30,26 @@
 }
 
 #LGFvid {
-	height:90vh;
 	margin-top: 5vh;
-	margin-bottom: 100px;
+	height: 90vh;
 	position: relative;
 	display: flex;
 	justify-content: center;
-	
+	border-radius: 7px;
+	overflow: hidden;
+	flex-basis: 100%;
 }
 
 #LGFvid video {
 	height:100%;
 	grid-column: 1;
   grid-row: 1;
+  border-radius: 7px;
+	overflow: hidden;
 }
 
 #LGFvid img {
-	width: 10%;
+	width: 80px;
 	z-index: 1;
 	margin: auto;
 	text-align: center;
@@ -64,28 +67,16 @@
 	width: 350px;
 }
 
-#DFposters {
-	width: 820px;
-	margin-bottom: 130px;
+.posters {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-}
-
-#LGFposters {
-	flex-shrink: 0;
-	width: 1100px;
-	margin-bottom: 130px;
-	display: flex;
-	justify-content: space-between;
+	gap: 1%;
 }
 
 #palette {
 	background-color: #ece8e5;
 	padding: 100px 0;
-}
-
-.poster {
-	width: 360px;
 }
 
 #ptposter {
@@ -201,7 +192,7 @@
 
 @media only screen and (max-width: 980px) {
 
-	#palette1 , #ptlines , #DFstatH , #ptdf , #navbar {display: none !important;}
+	#palette1 , #ptlines , #DFstatH , #ptdf , #navbar , #LGFv3 {display: none !important;}
 
 	#palette2 {display: block;}
 
@@ -211,18 +202,6 @@
 
 	#logo_1DF {
 		width: 450px;
-	}
-
-	#DFposters {
-	width: 800px;
-	flex-wrap: wrap;
-	margin-bottom: 0;
-}
-
-	.poster {
-		width: 100%;
-		margin-bottom: 100px;
-		border-radius: 10px;
 	}
 
 	#DFstatV {
@@ -280,6 +259,26 @@
 #mockupFP , #storyFP {
 	width: 800px;
 	margin-bottom: 130px;
+}
+
+.posters {
+	gap: 2%;
+}
+
+#LGFvid {
+	margin-top: 0;
+	width: 100%;
+	height: initial;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	border-radius: 0px;
+}
+
+#LGFvid video {
+	height:100%;
+	grid-column: 1;
+  grid-row: 1;
 }
 
 }
