@@ -676,11 +676,10 @@ article:hover #bline {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
-.bandSTD {
-	height: 400px;
-}
+.bandSTD {height: 400px;}
 
 .marginB {margin-bottom: 130px;}
 

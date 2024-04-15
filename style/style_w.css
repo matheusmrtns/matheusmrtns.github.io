@@ -143,11 +143,6 @@
 	background-color: #D6E4CD;
 } 
 
-.fpB {
-	margin-bottom: 20px;
-	position: relative;
-}
-
 .fpB img {
 	height: 110%;
 	position: absolute;
@@ -156,14 +151,12 @@
 
 #mockupFP {
 	width: 510px;
-	margin-bottom: 130px;
 }
 
 .sketch {
 	display: flex;
 	align-items: center;
 	height: 600px;
-	margin-bottom: 20px;
 }
 
 .sketch img {
@@ -171,14 +164,10 @@
 	margin-right: 100px;
 }
 
-.sketch div {
-	margin-bottom: 0;
-}
-
 #storyFP {
 	width: 700px;
 	margin-bottom: 130px;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 #W_band {
@@ -257,8 +246,7 @@
 }
 
 #mockupFP , #storyFP {
-	width: 800px;
-	margin-bottom: 130px;
+	width: 100%;
 }
 
 .posters {
