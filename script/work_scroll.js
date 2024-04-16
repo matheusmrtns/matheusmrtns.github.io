@@ -1,12 +1,12 @@
     window.addEventListener('scroll', function() {
     var navbar = document.getElementById('navbar');
-    var content = document.getElementById('content');
+    var workpage = document.getElementById('workpage');
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     if (screenWidth > 980) {     
 
-        if (window.scrollY > 800 || document.documentElement.scrollTop > 800) {
-            content.style.opacity = '1'; 
+        if (window.scrollY > 500 || document.documentElement.scrollTop > 500) {
+            workpage.style.opacity = '1'; 
         } else {
-            content.style.opacity = '0';
+            workpage.style.opacity = '0';
         } } });

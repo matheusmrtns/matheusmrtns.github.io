@@ -181,7 +181,7 @@
 
 @media only screen and (max-width: 980px) {
 
-	#palette1 , #ptlines , #DFstatH , #ptdf , #navbar , #LGFv3 {display: none !important;}
+	#palette1 , #ptlines , #DFstatH , #ptdf , #LGFv3 {display: none !important;}
 
 	#palette2 {display: block;}
 
@@ -267,6 +267,10 @@
 	height:100%;
 	grid-column: 1;
   grid-row: 1;
+}
+
+#dvid {
+	margin-top: 300px;
 }
 
 }

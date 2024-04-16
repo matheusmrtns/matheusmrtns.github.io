@@ -303,20 +303,17 @@ window.addEventListener('scroll', function() {
     var navbar = document.getElementById('navbar');
     var iconH = document.getElementById('iconH');
     var overlay = document.getElementById('ov');
-    var content = document.getElementById('content');
+    var grid = document.getElementById('grid');
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     if (screenWidth > 980) {
 
-    				navbar.style.display = 'flex';
-
         if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
             navbar.style.top = '0'; // Slide the navbar down
-            
-            content.style.opacity = '1';
+            grid.style.opacity = '1';
         } else {
             navbar.style.top = '-80px'; // Slide the navbar offscreen
-            content.style.opacity = '0';
+            grid.style.opacity = '0';
         }
 
         if (window.scrollY > 500 || document.documentElement.scrollTop > 500) {
@@ -328,13 +325,13 @@ window.addEventListener('scroll', function() {
         }
 
     } else {  
-
-        		navbar.style.display = 'none';
         
-        if (window.scrollY > 1010 || document.documentElement.scrollTop > 1010) {
-            content.style.opacity = '1'; 
+        if (window.scrollY > 1100 || document.documentElement.scrollTop > 1100) {
+        		navbar.style.top = '0';
+            grid.style.opacity = '1'; 
         } else {
-            content.style.opacity = '0';
+        		navbar.style.top = '-110px';
+            grid.style.opacity = '0';
         }
     }
 });
