@@ -622,7 +622,7 @@ article:hover #block {
 
 article:hover img {
 	opacity: 0.9;
-	transform: scale(1.02);
+	transform: scale(1.01);
 }
 
 article:hover figcaption {
@@ -703,18 +703,21 @@ article:hover #bline {
 
 .marginB {margin-bottom: 130px;}
 
-#videoH , #videoL , #videoV{
+.videoH , #videoL , .videoV{
 	margin: auto;
 }
 
-#videoH {
+.videoH {
 	position: relative;
 	width: 100%;
 	height: 100vh;
 	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#videoH video {
+.videoH video {
 	overflow: hidden;
 	margin: auto;
 	width: 100%;
@@ -730,7 +733,7 @@ article:hover #bline {
 	max-width: 750px;
 }
 
-#videOV , #videoV {
+#videOV , .videoV {
 	display: none;
 }
 
@@ -740,13 +743,13 @@ article:hover #bline {
 
 @media only screen and (max-width: 1700px) {
 
-	#videoH video {
+	.videoH video {
 	top: 0;
 	bottom: initial;
 	position: relative;
 }
 
-	#videoH {
+	.videoH {
 		height: initial;
 	}
 
@@ -915,14 +918,17 @@ article:hover figcaption {
 	bottom: -12vw;
 }
 
-#videoH {
+.videoH {
 	display: none;
 }
 
-#videoV {
+.videoV {
 	display: inline;
 	width: 100%;
 	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #videoL video {

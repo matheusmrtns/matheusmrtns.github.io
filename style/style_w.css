@@ -125,11 +125,9 @@
 	max-width: 1400px;
 }
 
-#DFstatV , #palette2 {display: none;}
+#palette2 {display: none;}
 
 #palette1 {display: block;}
-
- {display: none;}
 
 #fpB1 {
 	background-color: #d4e6e8;
@@ -178,10 +176,20 @@
 	height: 130px;
 }
 
+#logo_closer {
+	position: absolute;
+	z-index: 1;
+	width: 20vw;
+	transition: .5s ease;
+ }
+
+ #logo_closer:hover {
+	filter: blur(5px);
+ }
 
 @media only screen and (max-width: 980px) {
 
-	#palette1 , #ptlines , #DFstatH , #ptdf , #LGFv3 {display: none !important;}
+	#palette1 , #ptlines , #ptdf , #LGFv3 {display: none !important;}
 
 	#palette2 {display: block;}
 
@@ -191,12 +199,6 @@
 
 	#logo_1DF {
 		width: 450px;
-	}
-
-	#DFstatV {
-		display: block;
-		width: 800px;
-		margin-bottom: 100px;
 	}
 
 	#palette {
@@ -237,9 +239,9 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	height: initial;
-}
+	}
 
-.sketch img {
+	.sketch img {
 	width: 680px;
 	margin-right: 0;
 	margin-bottom: 130px;
@@ -272,5 +274,9 @@
 #dvid {
 	margin-top: 300px;
 }
+
+#logo_closer {
+	width: 50vw;
+ }
 
 }
