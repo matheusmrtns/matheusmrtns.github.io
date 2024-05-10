@@ -677,7 +677,6 @@ article:hover #bline {
 
 .textbox {
 	width: 510px;
-	margin-bottom: 130px;
 }
 
 .ptext {
@@ -703,7 +702,7 @@ article:hover #bline {
 
 .marginB {margin-bottom: 130px;}
 
-.videoH , #videoL , .videoV{
+.videoH , .videoV {
 	margin: auto;
 }
 
@@ -725,15 +724,11 @@ article:hover #bline {
 	bottom: 0;
 }
 
-#videoOV video {
+#ov video {
 	width: 100%;
 }
 
-#videoL video {
-	max-width: 750px;
-}
-
-#videOV , .videoV {
+.videoV {
 	display: none;
 }
 
@@ -840,21 +835,15 @@ header {
 	width: 100%;
 	height: 70vh;
 	position: relative;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	grid-column: 1;
   grid-row: 1;
 }
 
 #workpage {
 	width: 88%;
-}
-
-#videoOV {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
 }
 
 #intro {margin-bottom: 150px;}
@@ -892,7 +881,7 @@ figcaption {
 	height: 100%;
 }
 
-.border {border-radius: 10px;}
+.border {border-radius: 10px; overflow: hidden;}
 
 article {
 	margin-bottom: 27vw;
@@ -923,17 +912,15 @@ article:hover figcaption {
 }
 
 .videoV {
-	display: inline;
 	width: 100%;
 	margin-bottom: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
-#videoL video {
-	width: 100%;
-}
+.videoV video {width: 100%}
 
 .ptext {
 	font-size: 25pt;
@@ -942,7 +929,6 @@ article:hover figcaption {
 
 .textbox {
 	width: 100%;
-	margin-bottom: 130px;
 }
 
 .bandSTD {

@@ -162,10 +162,8 @@
 	margin-right: 100px;
 }
 
-#storyFP {
+.single {
 	width: 700px;
-	margin-bottom: 130px;
-	margin-top: 20px;
 }
 
 #W_band {
@@ -186,6 +184,22 @@
  #logo_closer:hover {
 	filter: blur(5px);
  }
+
+#closer_ui {
+	background-color: black;
+	height: initial;
+}
+
+#closer_ui img {
+	width: 500px;
+	margin-bottom: 20px;
+	z-index: 1;
+}
+
+#closer_ui video {
+	position: absolute;
+	height: 100%;
+}
 
 @media only screen and (max-width: 980px) {
 
@@ -247,7 +261,7 @@
 	margin-bottom: 130px;
 }
 
-#mockupFP , #storyFP {
+#mockupFP , .single {
 	width: 100%;
 }
 
@@ -277,6 +291,15 @@
 
 #logo_closer {
 	width: 50vw;
+	top: 27%;
  }
+
+ #closer_ui video {
+ 	object-fit: cover;
+ }
+
+ #closer_ui img {
+	width: 70%;
+}
 
 }
