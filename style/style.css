@@ -168,7 +168,7 @@ nav {
 	position: absolute;
 	color: #ffffff;
 	font-size: 22pt;
-	font-weight: 400;
+	font-weight: 360;
 	display: flex;
 	justify-content: center;
 }
@@ -176,7 +176,6 @@ nav {
 #time {
 	width: 60px;
 	font-size: 15pt;
-  font-weight: 360;
 	text-align: center;
 }
 
@@ -194,7 +193,7 @@ nav {
 }
 	
 header {
-	height: 110vh;
+	height: 100vh;
 	width: 100vw;
 }
 
@@ -211,7 +210,7 @@ header {
 }
 
 #ov {
-  height: 110vh;
+  height: 100vh;
 	width: 100vw;
 	position: absolute;
 	top: 0;
@@ -238,6 +237,7 @@ header {
 	width: 450px;
 	font-size: 14pt;
 	line-height: 18pt;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
 #intro {
@@ -579,17 +579,13 @@ footer , .ball , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scr
 }
 
 header {
-	height: 100vh;
+
 } 
 
 #headerbox {
-	width: 92%;
-	height: 95%;
-	top: 2.5%;
-}
-
-#ov {
-	height: 100%;
+	width: 92vw;
+	height: 95vh;
+	top: 2.5vh;
 }
 
 nav {
@@ -648,7 +644,7 @@ nav {
 #scrollybox {
 	right: initial;
 	margin-top: initial;
-	bottom: 60px;
+	bottom: 3vh;
 }
 
 #scrolly {
