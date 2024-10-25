@@ -2,36 +2,68 @@
 <html lang="en">
 
 <head>
-  <title>Matheus Martins Design Portfolio</title>
-  <meta name="description" content="Design portfolio of Matheus Martins, Brazilian graphic designer based in Barcelona. Experienced with graphic design, 3D modelling, illustration, photo editing and art direction">
+  <title>VERTTEBRA</title>
+  <meta name="description" content="Matheus Martins is a Brazilian graphic designer and art director based in Barcelona. Experienced with graphic design, 3D modelling, illustration, photo editing and art direction">
   <link href="./style/style.css" type="text/css" rel="stylesheet">
+  <link href="./style/style_w.css" type="text/css" rel="stylesheet">
   <meta charset="UTF-8">
-  <link rel="icon" href="http://example.com/favicon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/nuz3ilo.css">
-  <link rel="icon" href="./images/favicon.svg">
+  <link rel="icon" href="./images/favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+  <script src="./script/smooth_scroll.js"></script>
+  <!--<script src="./script/work_scroll.js"></script>-->
 </head>
 
 <body>
 
-<nav>
-	<a href="./index.html">
-		<div id="logo2">
-			<img id="matheus2" src="./images/matheus.svg">
-			<div id="line2"></div>
-			<img id="martins2" src="./images/martins.svg">
-	 </div>
-	</a>
-</nav>
+	<div class="ball" id="cursor"></div>
 
-<section>
-	<div id="grid2">
-	<img src="./images/pageimages/Poster_2.jpg">
-	<img src="./images/pageimages/Poster_1.jpg">
-	<img src="./images/pageimages/Poster_3.jpg">
+	<div id="LGFvid" class="marginB">
+		<img src="./images/pageimages/LGF/W_logo.png">
+    <video autoplay muted loop playsinline>
+	    <source src="./images/pageimages/LGF/gran_finaleV.mp4" type="video/mp4" />
+	    video not found
+	 	</video>
 	</div>
-</section>
+
+	<div id="workpage">
+
+	 		<div id="title_w" class="title ptext color">
+				<h1>A Vida São Dois Dias</h1>
+				<h2>2022&ensp;·&ensp;Lisbon, Portugal</h2>
+				<br><br>
+				<span id="subtitle_W"><h2>Poster Designs &ensp;·&ensp; Film Credits &ensp;·&ensp; Illustration</h2></span>
+			</div>
+
+	 		<div class="textbox ptext marginB">
+	 		<p>
+	 			<span class="bold">A Vida São Dois Dias</span> is W Barcelona's 2023 new year's eve celebration. This project required an identity design along with promotional content and physical materials for guest interaction.<br><br>The theme for the party this year was the (20)20s. A revival of the 1920s party culture a century later. Think of The Great Gatsby and big feather boas.
+	 		</p>
+	 		</div>
+
+	 		<img class="marginB posterA border" src="./images/pageimages/AVS2D/Poster_2.jpg">
+
+	 		<div class="textbox ptext marginB">
+	 			<p>
+	 				<span class="bold">The identity</span> is a play on the two time frames of the 1920s and 2020s. The base type is an art deco style typography, which in turn is transformed into 3D liquid chrome as a play on current typographic trends. The usual geometric art deco frames also get more organic shapes along with the chrome treatment.
+	 			</p>
+	 		</div>
+
+	 		<img class="marginB posterA border" src="./images/pageimages/AVS2D/Poster_1.jpg">
+
+	 		<div class="textbox ptext marginB">
+	 			<p>
+	 				<span class="bold">The identity</span> is a play on the two time frames of the 1920s and 2020s. The base type is an art deco style typography, which in turn is transformed into 3D liquid chrome as a play on current typographic trends. The usual geometric art deco frames also get more organic shapes along with the chrome treatment.
+	 			</p>
+	 		</div>
+
+	 		<img class="marginB posterA border" src="./images/pageimages/AVS2D/Poster_3.jpg">
+
+	</div>
+
+	<script src="./script/cursor.js"></script>
 
 </body>
 </html>

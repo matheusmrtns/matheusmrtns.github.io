@@ -113,215 +113,53 @@ html.lenis, html.lenis body {
 
 a:link, a:visited {
 	text-decoration: none;
-	color: inherit;
+	color: black;
   cursor: none;
 
 }
 
 a:active {
-	color: inherit;
+	color: black;
 }
+
+.text {
+	font-family: 'Clash Grotesk', sans-serif; 
+	font-weight: 350;
+	}
 
 .color {
+	
 	color: #1e1e1e;
-}
-
-.colorw {
-	color: #ffffff;
 }
 
 ul {
 	
     list-style-type: none;
 }
-
-nav {
-	height: 70px;
-	width: 100vw;
-	position: fixed;
-	top: 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-	transition: top 0.3s;
-}
-
-#nav {
-	mix-blend-mode: normal;
-}
-
-#navigation {
-	position: absolute;
-	top: 2vw;
-	right: 2vw;
-	display: flex;
-	justify-content: right;
-
-		> *
-			{margin: 0 15px;}
-}
-
-#clock {
-	position: absolute;
-	color: #ffffff;
-	font-size: 22pt;
-	font-weight: 400;
-	display: flex;
-	justify-content: center;
-}
-
-#time {
-	width: 60px;
-	font-size: 15pt;
-  font-weight: 360;
-	text-align: center;
-}
-
-#logo {
-	width: 600px;
-	position: fixed;
-	transition: .6s ease;
-	top: 42vh;
-	z-index: 1;
-}
-
-#icon {
-	width: 25px;
-	margin-top: 3px;
-}
 	
 header {
-	height: 110vh;
-	width: 100vw;
-}
-
-#headerbox {
-	width: 95vw;
-	height: 92vh;
-	position: relative;
-	margin: auto;
-	top: 4vh;
-	display: flex;
+	height: 100vh;
+	display: grid;
 	justify-content: center;
 	align-items: center;
-	align-content: center;
-}
-
-#ov {
-  height: 110vh;
-	width: 100vw;
-	position: absolute;
-	top: 0;
-	z-index: -1;
-
-	display: flex;
-	justify-content: center;
-	pointer-events: none;
-  margin: auto;
-  overflow: hidden;
-  > video {object-fit: cover;}
-}
-
-#madeby {
-	position: absolute;
-	left: 0;
-	top: -10px;
-}
-
-#info {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 450px;
-	font-size: 14pt;
-	line-height: 18pt;
-}
-
-#intro {
-	text-align: right;
-	position: absolute;
-	right: 0px;
-	bottom: 0;
-	line-height: 40pt;
-}
-
-#coords {
-	width: 500px;
-	position: absolute;
-	bottom: 0;
-	text-align: center;
-		> h1 {
-			font-size: 65pt;
-			line-height: 80pt;
-			font-weight: 680;
-			letter-spacing: 2px;
-			margin-left: -20px;
-		}
-		> h2 {
-			font-size: 25pt;
-			font-weight: 300;
-		}
-}
-
-#scrollybox {
-	position: absolute;
-	right: 100px;
-	margin-top: -70px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#scrolly {
-	position: relative;
-	/*right: 80px;
-	top: 42vh;*/
-	width: 45px;
-	height: 90px;
-	border: solid 1px white;
-	border-radius: 40px;
-	transition: .4s ease;
 	margin: auto;
-	}
-
-	#scrollball  {
-		position: relative;
-		top: 18%;
-		width: 15px;
-		height: 15px;
-		background-color: white;
-		border: solid 1px white;
-		border-radius: 30px;
-		margin: auto;
-		transition: .4s ease;
-		animation-name:scrolly;
-	  animation-duration: 1.7s;
-	  animation-iteration-count: infinite;
-	  animation-timing-function: ease-in-out;
-	}
-
-	#scrolly:hover {
-		background-color: white;
-		> #scrollball {background-color: #000000;}
-	}
-
-	@keyframes scrolly {
-	    0% { opacity: 0; scale: 0.95; top:18% }
-	    20% { opacity: 1; scale: 1; }
-	    60% { opacity: 0; scale: 0.5; top:65% }
-	    100% { opacity: 0; scale: 0.5; top:65% }   
-	  }
+	width: 100vw;
+}
 
 .title {
 	text-align: center;
 	margin-bottom: 200px;
 	width: 100%;
-	> h1 {margin-bottom: 15px;	}
+}
+
+#vlogo {
+	width: 400px;
+	margin-bottom: 10px;
 }
 
 h1 {
 	font-size: 40pt;
+	line-height: 33pt;
 	font-weight: 520;
 	letter-spacing: -2px;
 	transition: .4s ease;
@@ -333,7 +171,12 @@ h1:hover {
 
 h2 {
 	font-size: 17pt;
+	font-family: 'Clash Grotesk', sans-serif;
 	font-weight: 350;
+}
+
+#coords {
+	line-height: 80pt;
 }
 
 #title_w {
@@ -341,12 +184,38 @@ h2 {
 	margin-bottom: 130px !important;
 }
 
-.blur {
-	opacity: 1;
-	filter: blur(0px);
+#subtitle_W {padding-top: 50px;}
+
+#navbar {
+	height: 80px;
+	width: 100vw;
+	position: fixed;
+	top: -80px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	z-index: 1;
+	transition: top 0.3s;
+	mix-blend-mode: difference;
 }
 
-#subtitle_W {padding-top: 50px;}
+#navlogo {
+	width: 55px;
+	margin-left: 30px;
+}
+
+#ov {
+	mix-blend-mode: lighten;
+	z-index: 1;
+	pointer-events: none;
+	object-fit: cover;
+	width: 1200px;
+	position: relative;
+	grid-column: 1;
+  grid-row: 1;
+  margin: auto;
+  transition: .4s ease;
+}
 
 #line3 {
 	width: 0px;
@@ -363,7 +232,6 @@ h2 {
 
 #grid {
 	margin: auto;
-	padding-top: 120px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -417,7 +285,6 @@ article img {
 .border {border-radius: 7px; overflow: hidden;}
 
 figcaption {
-	font-family: 'Clash Grotesk', sans-serif;
 	font-size: 20pt;
 	font-weight: 520;
 	letter-spacing: -.5px;
@@ -503,6 +370,10 @@ article:hover #bline {
 	bottom: 0;
 }
 
+#ov video {
+	width: 100%;
+}
+
 .videoV {
 	display: none;
 }
@@ -548,6 +419,10 @@ article:hover #bline {
 	width: 85%;
  }
 
+ #iconH {
+	width: 70vw;
+}
+
  }
 
 @media only screen and (max-width: 1350px) {
@@ -555,8 +430,6 @@ article:hover #bline {
   article:hover #block {
  	height: 30.5vw;
  }
-
- #coords {display: none}
 
 }
 
@@ -577,94 +450,40 @@ footer , .ball , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scr
 }
 
 header {
-	height: 100vh;
+	align-items: center;
+	height: 90vh;
+	margin-bottom: 5%;
+	overflow: clip;
 } 
 
-#headerbox {
-	width: 92vw;
-	height: 97vh;
-	top: 1.5vh;
+#navbar { 
+	top: -110px;
+	height: 110px;
+}
+
+#navlogo {
+	width: 100px;
+	margin-left: 40px;
 }
 
 #ov {
-	height: 100%;
-}
-
-nav {
-	height: 100px;
-}
-
-#logo {
-	top: 30vh;
-}
-
-#madeby {
-	width: 250px;
-	font-size: 23pt;
-	line-height: 24pt;
-	top: 0;
-	margin-bottom: -20px;
-}
-
-#icon {
-	width: 30px;
-}
-
-#clock {
-	font-size: 30pt;
-}
-
-#time {
-	width: 95px;
-	font-size: 25pt;
-}
-
-#info {
-	left: initial;
-	bottom: initial;
-	margin-top: -100px;
-	width: 80vw;
-	font-size: 22pt;
-	line-height: 24pt; 
-}
-
-#intro {
-	text-align: center;
-	right: initial;
-	bottom: initial;
-	margin-bottom: -600px;
-	}
-
-#coords {
-	display: initial;
-	bottom: 0;
-	right: 0;
-	text-align: right;
-	> h2 {display: none;}
-}
-
-#scrollybox {
-	right: initial;
-	margin-top: initial;
-	bottom: 60px;
-}
-
-#scrolly {
-	margin: auto;
-	width: 90px;
-	height: 180px;
-	border-radius: 60px;
-}
-
-#scrollball {
-	top: 18%;
-	width: 30px;
-	height: 30px;
+	width: 100%;
+	height: 70vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 1;
+  grid-row: 1;
 }
 
 #workpage {
 	width: 88%;
 }
+
+#intro {margin-bottom: 150px;}
+
+#vlogo {width: 600px;}
 
 h1 {
 	font-size: 57pt;
@@ -673,6 +492,10 @@ h1 {
 
 h2 {
 	font-size: 25pt;
+}
+
+#coords {
+	line-height: 120pt;
 }
 	
 figcaption {
@@ -688,7 +511,6 @@ figcaption {
 #grid {
 	width: 80%;
 	justify-content: center;
-	padding-top: 230px;
 }
 
 #block {
