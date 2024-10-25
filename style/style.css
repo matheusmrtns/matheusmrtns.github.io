@@ -269,7 +269,7 @@ header {
 #scrollybox {
 	position: absolute;
 	right: 100px;
-	margin-top: -70px;
+	margin-top: -105px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -582,15 +582,14 @@ footer , .ball , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scr
 	top: 2.5%;
 	align-content: flex-end;
 	flex-direction: column;
+	gap: 50px;
 
-	/*> * {
-	border: solid 1px white;
-	
-}*/ }
+	/*> * { border: solid 1px white; }*/
+	 }
 
 #filler {
 	width: 100%;
-	flex: 3;
+	flex: 4;
 }
 
 .headmargin {
@@ -639,7 +638,6 @@ nav {
 #intro {
 	position: relative;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	text-align: center;
 	right: initial;
