@@ -48,10 +48,12 @@ html.lenis, html.lenis body {
   pointer-events: none;
   top: var(--y, 0);
   left: var(--x, 0);
-  background: transparent;
-  z-index: 2;
+  background: #aaa;
+  mix-blend-mode: soft-light;
+  z-index: 3;
   backdrop-filter: blur(5px);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: background 0.3s ease;
 }
 
 ::-moz-selection { color: lightgrey; }
@@ -220,7 +222,7 @@ header {
 	pointer-events: none;
   margin: auto;
   overflow: hidden;
-  > video {object-fit: cover;}
+  > video  , img {object-fit: cover; width: 100%}
 }
 
 #madeby {
@@ -582,8 +584,9 @@ header {
 
 #headerbox {
 	width: 92vw;
-	height: 97vh;
-	top: 1.5vh;
+	height: 95%;
+	top: 2.5%;
+	border: solid 1px white;
 }
 
 #ov {
