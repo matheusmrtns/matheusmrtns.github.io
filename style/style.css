@@ -583,10 +583,9 @@ header {
 } 
 
 #headerbox {
-	width: 92vw;
+	width: 92%;
 	height: 95%;
 	top: 2.5%;
-	border: solid 1px white;
 }
 
 #ov {
