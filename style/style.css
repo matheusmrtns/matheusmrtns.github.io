@@ -193,13 +193,7 @@ nav {
 	
 header {
 	height: 100svh;
-	width: 100vw;
-
-	background-image: url("../images/factory render 10_24.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; /* Center the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+	width: 100svw;
 }
 
 #headerbox {
@@ -220,6 +214,13 @@ header {
 	position: absolute;
 	top: 0;
 	z-index: -1;
+	transition: ease .4s;
+
+	background-image: url("../images/factory render 10_24.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 
 	display: flex;
 	justify-content: center;
@@ -274,7 +275,6 @@ header {
 #scrollybox {
 	position: absolute;
 	right: 100px;
-	margin-top: -105px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
