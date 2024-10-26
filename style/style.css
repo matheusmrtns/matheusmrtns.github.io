@@ -228,10 +228,8 @@ header {
 	display: flex;
 	justify-content: center;
 	pointer-events: none;
-object-fit: cover;
-  background-color: darkred;
 
-  > video  , img {object-fit: cover; height: 100%; width: 100%; position: fixed; }
+  > video  , img {object-fit: cover; height: 100svh; width: 100svw; position: fixed; }
 }
 
 #madeby {
