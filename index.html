@@ -34,7 +34,7 @@
 
 	<div id="navigation">
 	<a href="#header" onclick="lenis.scrollTo('#header')"><img id="icon" src="./images/icon.svg"></a>
-	<a href="#grid" onclick="lenis.scrollTo('#grid')"><p><span class="bold">work</span></p></a>
+	<a href="#main" onclick="lenis.scrollTo('#main')"><p><span class="bold">work</span></p></a>
 	<a href="#footer" onclick="lenis.scrollTo('#footer')"><p>contact</p></a>
 	</div>
 
@@ -60,7 +60,7 @@
 		</div>
 
 		<div id="scrollybox" class="headmargin">
-			<a href="#grid" onclick="lenis.scrollTo('#grid')">
+			<a href="#main" onclick="lenis.scrollTo('#main')">
 				<div id="scrolly">
 					<div id="scrollball"></div>
 				</div>
@@ -68,7 +68,7 @@
 		</div>
 	</div>
 
-	<div id="ov"></div>
+	<div id="ov"><img src="./images/factory render 10_24.png"></div>
 
 	<!--<div id="ov">
 	    <video autoplay muted loop playsinline>
@@ -79,12 +79,11 @@
 
 </header>
 
-<section id="grid" class="text color">
-
+<section id="main">
+	<div id="grid" class="text color">
     <article>
     	<a href="./Danae_Fischer.html">
     	<div id="block" class="border">
-    		
 	    	<img src="./images/danae.jpg">
 	    </div>
 	    </a>
@@ -208,7 +207,7 @@
 	    <figcaption>Roberta Sá<br><span class='desc'>Branding</span></figcaption>
 	    <div id="bline"></div>
 	  </article>
-	  
+	  </div>
   </section>
 
   <footer id="footer">
@@ -289,25 +288,9 @@
     });
 });
 
-  function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('time').innerHTML =  h + ":" + m;
-  setTimeout(startTime, 1000);
-}
-
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-
 </script>
 
-
+<script src="./script/clock.js"></script>
 <script src="./script/cursor.js"></script>
 
 </body>

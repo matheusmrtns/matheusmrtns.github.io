@@ -16,9 +16,31 @@
   <!--<script src="./script/work_scroll.js"></script>-->
 </head>
 
-<body>
+<body onload="startTime()">
 
 	<div class="ball" id="cursor"></div>
+
+	<nav class="ptext colorw invert">
+
+		<div></div>
+
+		<div id="clock">
+			(<div id="time"></div>)
+		</div>
+
+		<div id="logoW">
+			<a href="./index.html">
+				<img src="./images/verttebra_logo_W.svg">
+			</a>
+		</div>
+
+		<div id="navigation">
+			<a href="#header" onclick="lenis.scrollTo('#header')"><img id="icon" src="./images/icon.svg"></a>
+			<a href="./index.html #main" onclick="lenis.scrollTo('#main')"><p><span class="bold">work</span></p></a>
+			<a href="#footer" onclick="lenis.scrollTo('#footer')"><p>contact</p></a>
+		</div>
+
+	</nav>
 
 	<div id="LGFvid" class="marginB">
 		<img src="./images/pageimages/LGF/W_logo.png">
@@ -63,6 +85,7 @@
 
 	</div>
 
+	<script src="./script/clock.js"></script>
 	<script src="./script/cursor.js"></script>
 
 </body>

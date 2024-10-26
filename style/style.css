@@ -164,6 +164,8 @@ nav {
 			{margin: 0 15px;}
 }
 
+.invert {mix-blend-mode: difference;}
+
 #clock {
 	position: absolute;
 	color: #ffffff;
@@ -184,6 +186,14 @@ nav {
 	position: fixed;
 	transition: .6s ease;
 	top: 42vh;
+	z-index: 1;
+}
+
+#logoW {
+	width: 150px;
+	position: fixed;
+	transition: .6s ease;
+	top: 6vh;
 	z-index: 1;
 }
 
@@ -214,21 +224,14 @@ header {
 	position: absolute;
 	top: 0;
 	z-index: -1;
-	transition: ease .4s;
-
-	background-image: url("../images/factory render 10_24.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; /* Center the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
 
 	display: flex;
 	justify-content: center;
 	pointer-events: none;
-  margin: auto;
-  overflow: hidden;
+object-fit: cover;
+  background-color: darkred;
 
-  > video  , img {object-fit: cover; width: 100%;position: static;}
+  > video  , img {object-fit: cover; height: 100%; width: 100%; position: fixed; }
 }
 
 #madeby {
@@ -359,9 +362,17 @@ footer {
 
 #subtitle_W {padding-top: 50px;}
 
+#main {
+	width: 100%;
+	background-color: #fcfcfc;
+	display: flex;
+	justify-content: center;
+	padding-top: 120px;
+	z-index: 0;
+}
+
 #grid {
 	margin: auto;
-	padding-top: 120px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -602,6 +613,11 @@ nav {
 	top: 30vh;
 }
 
+#logoW {
+	width: 270px;
+	top: 100px;
+}
+
 #madeby {
 	width: 250px;
 	font-size: 23pt;
@@ -699,10 +715,13 @@ figcaption {
 	font-size: 3.7vw;
 }
 
+#main {
+	padding-top: 230px;
+}
+
 #grid {
 	width: 80%;
 	justify-content: center;
-	padding-top: 230px;
 }
 
 #block {
