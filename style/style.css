@@ -189,12 +189,17 @@ nav {
 
 #icon {
 	width: 25px;
-	margin-top: 3px;
 }
 	
 header {
 	height: 100svh;
 	width: 100vw;
+
+	background-image: url("../images/factory render 10_24.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #headerbox {
@@ -221,7 +226,8 @@ header {
 	pointer-events: none;
   margin: auto;
   overflow: hidden;
-  > video  , img {object-fit: cover; width: 100%}
+
+  > video  , img {object-fit: cover; width: 100%;position: static;}
 }
 
 #madeby {
@@ -237,7 +243,6 @@ header {
 	width: 450px;
 	font-size: 14pt;
 	line-height: 18pt;
-	text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
 #intro {
@@ -313,6 +318,11 @@ header {
 	    100% { opacity: 0; scale: 0.5; top:65% }   
 	  }
 
+.blur {
+	opacity: 1;
+	filter: blur(0px);
+}
+
 .title {
 	text-align: center;
 	margin-bottom: 200px;
@@ -336,30 +346,18 @@ h2 {
 	font-weight: 350;
 }
 
+footer {
+	height: 400px;
+	width: 100%;
+	background-color: #eee;
+}
+
 #title_w {
 	margin-top: 0px;
 	margin-bottom: 130px !important;
 }
 
-.blur {
-	opacity: 1;
-	filter: blur(0px);
-}
-
 #subtitle_W {padding-top: 50px;}
-
-#line3 {
-	width: 0px;
-	height: 0px;
-	border-left: 1px solid rgb(0, 0, 0);
-	transition: .4s ease;
-	margin: auto;
-}
-
-#drop {
-	width: 50px;
-	margin-right: 260px;
-}
 
 #grid {
 	margin: auto;
@@ -572,7 +570,7 @@ article:hover #block {
 @media only screen and (max-width: 980px) {
 
 
-footer , .ball , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
+ .ball , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scrollbar-thumb , ::-webkit-scrollbar-thumb:hover {
 	display:none;
 }
 
@@ -582,14 +580,14 @@ footer , .ball , ::-webkit-scrollbar , ::-webkit-scrollbar-track , ::-webkit-scr
 	top: 2.5%;
 	align-content: flex-end;
 	flex-direction: column;
-	gap: 50px;
+	gap: ;
 
 	/*> * { border: solid 1px white; }*/
 	 }
 
 #filler {
 	width: 100%;
-	flex: 4;
+	flex: 3.5;
 }
 
 .headmargin {
@@ -638,6 +636,7 @@ nav {
 #intro {
 	position: relative;
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	text-align: center;
 	right: initial;
