@@ -67,14 +67,6 @@ html.lenis, html.lenis body {
        font-display: swap;
 }
 
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('../fonts/PPNeueMontreal-Variable.woff2') format('woff2'),
-       url('../fonts/PPNeueMontreal-Variable.woff') format('woff'),
-       url('../fonts/PPNeueMontreal-Variable.ttf') format('truetype');
-       font-display: swap;
-}
-
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -351,7 +343,33 @@ footer {
 	height: 400px;
 	width: 100%;
 	background-color: #eee;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
+
+#footlogo {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	flex: 1;
+	> img {width: 50%;}
+}
+
+#email {
+	height: 100%;
+	font-size: 3vw;
+	font-weight: 520;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: ease .4s;
+	text-align: center;
+	flex: 2;
+}
+
+#email:hover {font-weight: 350}
 
 #title_w {
 	margin-top: 0px;
@@ -424,7 +442,6 @@ article img {
 .border {border-radius: 7px; overflow: hidden;}
 
 figcaption {
-	font-family: 'Clash Grotesk', sans-serif;
 	font-size: 20pt;
 	font-weight: 520;
 	letter-spacing: -.5px;
@@ -452,7 +469,6 @@ article:hover #bline {
 }
 
 .desc {
-	font-family: 'Clash Grotesk', sans-serif;
 	font-size: 14pt;
 	font-weight: 350;
 	letter-spacing: 0px;
@@ -470,7 +486,6 @@ article:hover #bline {
 }
 
 .bold {
-	font-family: 'Clash Grotesk', sans-serif;
 	font-weight: 520;
 	
 }
@@ -688,6 +703,23 @@ nav {
 	top: 18%;
 	width: 30px;
 	height: 30px;
+}
+
+footer {
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column-reverse;
+	> * { width:100%; height: initial; }
+}
+
+#footlogo {
+	justify-content: center;
+	align-items: flex-start;
+	> img { width: 50vw; }
+}
+
+#email {
+	font-size: 5vw;
 }
 
 #workpage {
