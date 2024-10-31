@@ -316,6 +316,10 @@ header {
 	filter: blur(0px);
 }
 
+.darken {
+	filter: brightness(1);
+}
+
 .title {
 	text-align: center;
 	margin-bottom: 200px;
