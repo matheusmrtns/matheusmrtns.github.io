@@ -659,9 +659,10 @@ nav {
 	position: relative;
 	left: initial;
 	bottom: initial;
-	width: 80vw;
-	font-size: 22pt;
-	line-height: 24pt; 
+	width: 87vw;
+	font-size: 24pt;
+	line-height: 30pt; 
+	text-align: center;
 
 	flex: 1;
 }
@@ -736,7 +737,7 @@ h1 {
 }
 
 h2 {
-	font-size: 25pt;
+	font-size: 30pt;
 }
 	
 figcaption {
@@ -805,8 +806,8 @@ article:hover figcaption {
 .videoV video {width: 100%}
 
 .ptext {
-	font-size: 25pt;
-	line-height: 36pt;
+	font-size: 28pt;
+	line-height: 39pt;
 }
 
 .textbox {
