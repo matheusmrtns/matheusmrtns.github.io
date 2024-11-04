@@ -203,11 +203,6 @@
 
 .posterA {
 	height: 90vh;
-	transition: .5s ease;
-}
-
-.posterA:hover {
-	height: 155vh;
 }
 
 @media only screen and (max-width: 980px) {
@@ -215,6 +210,11 @@
 	#palette1 , #ptlines , #ptdf , #LGFv3 {display: none !important;}
 
 	#palette2 {display: block;}
+
+	.posterA {
+	height: initial;
+	width: 100%;
+}
 
 	#DFlogo {
 		height: 480px;

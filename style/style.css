@@ -386,9 +386,15 @@ footer {
 	width: 100%;
 	background-color: #fcfcfc;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 120px;
 	z-index: 0;
+}
+
+#grid:nth-child(2) {
+  justify-content: left;
+  gap: 3.6%;
 }
 
 #grid {
@@ -537,11 +543,6 @@ article:hover #bline {
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-
-/*@media 
-(-webkit-min-device-pixel-ratio: 1.25), 
-(min-resolution: 120dpi) { body {zoom: 0.75;} }*/
-
 @media only screen and (max-width: 1700px) {
 
 	.videoH video {
@@ -570,7 +571,6 @@ article:hover #bline {
  }
 
  #grid {
-	justify-content: space-between;
 	width: 85%;
  }
 
