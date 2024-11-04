@@ -205,11 +205,21 @@
 	height: 90vh;
 }
 
+#logo_AVS2D {
+	position: absolute;
+	z-index: 1;
+	width: 40vw;
+ }
+
 @media only screen and (max-width: 980px) {
 
 	#palette1 , #ptlines , #ptdf , #LGFv3 {display: none !important;}
 
 	#palette2 {display: block;}
+
+#logo_AVS2D {
+	width: 80vw;
+ }
 
 	.posterA {
 	height: initial;
