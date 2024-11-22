@@ -268,6 +268,7 @@ header {
 #scrollybox {
 	position: absolute;
 	right: 100px;
+	top: 38vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -625,16 +626,17 @@ article:hover #block {
 	width: 90%;
 	height: 95%;
 	top: 2.5%;
-	align-content: flex-end;
+
 	flex-direction: column;
-	gap: ;
+	gap: 20px;
+	flex-wrap: nowrap;
 
 	/*> * { border: solid 1px white; }*/
 	 }
 
 #filler {
 	width: 100%;
-	flex: 3.5;
+	height: 40%;
 }
 
 .headmargin {
@@ -682,8 +684,8 @@ nav {
 	font-size: 24pt;
 	line-height: 30pt; 
 	text-align: center;
-
-	flex: 1;
+	align-content: center;
+	flex: 1 2 auto;
 }
 
 #intro {
@@ -694,26 +696,26 @@ nav {
 	text-align: center;
 	right: initial;
 	bottom: initial;
-	width: 100%;
-
-	flex: 2;
+	flex: 1 2 auto;
 	}
 
-#coords {
+#scrollybox {
+	display: flex;
+	position: relative;
+	right: initial;
+	top: initial;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 110px;
+	flex: 1 2 auto;
+} 
+
+	#coords {
 	display: initial;
 	bottom: 0;
 	right: 0;
 	text-align: right;
 	> h2 {display: none;}
-}
-
-#scrollybox {
-	position: relative;
-	right: initial;
-	margin-top: 0;
-	width: 100%;
-
-	flex: 1;
 }
 
 #scrolly {
