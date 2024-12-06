@@ -238,20 +238,23 @@
 
 	window.addEventListener('scroll', function() {
     requestAnimationFrame(() => {
-        var overlay = document.getElementById('ov');
+    
+        // var Parallax = document.getElementById('ovimg');
+        // var ParallaxValue =  1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
+
+        var scrollY = window.scrollY || document.documentElement.scrollTop;
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var grid = document.getElementById('grid');
         var logo = document.getElementById('logo');
         var navmix = document.getElementById('nav');
-        // var Parallax = document.getElementById('ovimg');
+
+        var maxScroll = 700; // Adjust based on how far down you want the effects to occur
         var blurElements = document.querySelectorAll('.blur');
         var darkenElements = document.querySelectorAll('.darken');
-        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-		var scrollY = window.scrollY || document.documentElement.scrollTop;
-        var maxScroll = 700; // Adjust based on how far down you want the effects to occur
-        var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
         var blurValue = Math.min(scrollY / maxScroll * 20, 20); // Increase blur from 0 to 20px
         var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
-        // var ParallaxValue =  1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
+        var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
+
 
         if (screenWidth > 980) {
             if (window.scrollY > 50 || document.documentElement.scrollTop > 50) {
@@ -266,12 +269,6 @@
                 navmix.style.mixBlendMode = 'normal';
             }
 
-            if (window.scrollY > 400 || document.documentElement.scrollTop > 400) {
-                grid.style.opacity = '1';
-            } else {
-                grid.style.opacity = '0';
-            }
-
             blurElements.forEach(function(blur) {
                 blur.style.opacity = opacityValue;
                 blur.style.filter = `blur(${blurValue}px)`;
@@ -280,6 +277,12 @@
             darkenElements.forEach(function(darken) {
                 darken.style.filter = `brightness(${darkenValue})`;
             });
+
+            if (window.scrollY > 400 || document.documentElement.scrollTop > 400) {
+                grid.style.opacity = '1';
+            } else {
+                grid.style.opacity = '0';
+            }
 
         } else {
 
