@@ -238,7 +238,7 @@
 
 	window.addEventListener('scroll', function() {
     requestAnimationFrame(() => {
-    
+
         // var Parallax = document.getElementById('ovimg');
         // var ParallaxValue =  1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
 
@@ -315,6 +315,39 @@
             darkenElements.forEach(function(darken) {
                 darken.style.filter = `brightness(${darkenValueM})`;
             });
+
+                // Select all service buttons and button circles
+		const serviceButtons = document.querySelectorAll('.service_button');
+		const buttonCircles = document.querySelectorAll('.button_circle');
+
+		serviceButtons.forEach((button, index) => {
+		  button.addEventListener('click', function () {
+		    // Reset all buttons
+		    serviceButtons.forEach(btn => {
+		      btn.style.backgroundColor = 'transparent'; // Reset background color
+		      btn.style.color = 'initial'; // Reset text color
+		      btn.style.paddingLeft = '150px'; // Reset padding
+		      btn.style.marginLeft = '0'; // Reset margin
+		    });
+
+		    // Reset all circles
+		    buttonCircles.forEach(circle => {
+		      circle.style.backgroundColor = 'transparent'; // Reset circle background color
+		    });
+
+		    // Style the clicked button
+		    this.style.backgroundColor = '#1e1e1e';
+		    this.style.color = '#fcfcfc';
+		    this.style.paddingLeft = '90px';
+		    this.style.marginLeft = '100px';
+
+		    // Style the corresponding circle
+		    if (buttonCircles[index]) {
+		      buttonCircles[index].style.backgroundColor = '#1e1e1e';
+		    }
+		  });
+		});
+
         }
     });
 });

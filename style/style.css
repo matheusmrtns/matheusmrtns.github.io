@@ -832,7 +832,7 @@ figcaption {
 	ul:nth-child(3) {display: none;}
 }
 
-#service_box:nth-child(1) {flex-wrap: wrap; justify-content: left;}
+#service_box:nth-child(1) {flex-wrap: wrap; justify-content: left;gap: 20px}
 
 #service_box:nth-child(2) li {	font-size: 36pt; padding: 12px 0px}
 
@@ -844,18 +844,9 @@ figcaption {
 	border: solid 1px #1e1e1e;
 	border-radius: 100px;
 	padding: 25px 90px 25px 150px;
-	margin: 0 auto 20px 0;
+	
 	text-align: center;
-	transition: ease .4s;
-}
-
-.service_button:nth-child(3) {margin-bottom: 0}
-
-.service_button:hover {
-	background-color: #030303;
-	color: #fcfcfc;
-	margin-left: 100px;
-	padding-left: 90px;
+	transition: ease .2s;
 }
 
 .button_circle {
