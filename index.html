@@ -91,21 +91,21 @@
 			<div class="button_circle"></div>
 		</div>
 		<div id="service_box">
-			<ul>
+			<ul class="s_text">
 				<li>BRAND IDENTITY</li>
 				<li>UX/UI</li>
 				<li>MOTION GRAPHICS</li>
 				<li>ILLUSTRATION</li>
 				<li>PHOTO EDITING</li>
 			</ul>
-			<ul>
+			<ul class="s_text">
 				<li>CAMPAIGNS</li>
 				<li>SCENOGRAPHY</li>
 				<li>CREATIVE NARRATIVES</li>
 				<li>PHOTOGRAPHY</li>
 				<li>CONSULTING</li>
 			</ul>
-			<ul>
+			<ul class="s_text">
 				<li>ANIMATION</li>
 				<li>MODELLING</li>
 				<li>TEXTURING</li>
@@ -316,37 +316,45 @@
                 darken.style.filter = `brightness(${darkenValueM})`;
             });
 
-                // Select all service buttons and button circles
-		const serviceButtons = document.querySelectorAll('.service_button');
-		const buttonCircles = document.querySelectorAll('.button_circle');
+			// Select all service buttons, button circles, and s_text divs
+			const serviceButtons = document.querySelectorAll('.service_button');
+			const buttonCircles = document.querySelectorAll('.button_circle');
+			const sTextDivs = document.querySelectorAll('.s_text');
 
-		serviceButtons.forEach((button, index) => {
-		  button.addEventListener('click', function () {
-		    // Reset all buttons
-		    serviceButtons.forEach(btn => {
-		      btn.style.backgroundColor = 'transparent'; // Reset background color
-		      btn.style.color = 'initial'; // Reset text color
-		      btn.style.paddingLeft = '150px'; // Reset padding
-		      btn.style.marginLeft = '0'; // Reset margin
-		    });
+			serviceButtons.forEach((button, index) => {
+			  button.addEventListener('click', function () {
+			    // Reset all buttons
+			    serviceButtons.forEach(btn => {
+			      btn.style.backgroundColor = 'transparent'; // Reset background color
+			      btn.style.color = 'initial'; // Reset text color
+			      btn.style.paddingLeft = '150px'; // Reset padding
+			      btn.style.marginLeft = '0'; // Reset margin
+			    });
 
-		    // Reset all circles
-		    buttonCircles.forEach(circle => {
-		      circle.style.backgroundColor = 'transparent'; // Reset circle background color
-		    });
+			    // Reset all circles
+			    buttonCircles.forEach(circle => {
+			      circle.style.backgroundColor = 'transparent'; // Reset circle background color
+			    });
 
-		    // Style the clicked button
-		    this.style.backgroundColor = '#1e1e1e';
-		    this.style.color = '#fcfcfc';
-		    this.style.paddingLeft = '90px';
-		    this.style.marginLeft = '100px';
+			    // Apply styles to the clicked button
+			    this.style.backgroundColor = '#1e1e1e';
+			    this.style.color = '#fcfcfc';
+			    this.style.paddingLeft = '90px';
+			    this.style.marginLeft = '100px';
 
-		    // Style the corresponding circle
-		    if (buttonCircles[index]) {
-		      buttonCircles[index].style.backgroundColor = '#1e1e1e';
-		    }
-		  });
-		});
+			    // Style the corresponding circle
+			    if (buttonCircles[index]) {
+			      buttonCircles[index].style.backgroundColor = '#1e1e1e';
+			    }
+
+			    // Apply translateY to all s_text divs
+			    const translateValue = -378 * index; // Calculate translation value based on button index
+			    sTextDivs.forEach(text => {
+			      text.style.transform = `translateY(${translateValue}px)`;
+			    });
+			  });
+			});
+
 
         }
     });

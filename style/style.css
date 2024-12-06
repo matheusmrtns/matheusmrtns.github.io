@@ -427,8 +427,6 @@ footer {
 	gap: 200px;
 	transition: ease .4s;
 
-	.button_circle {display: none;}
-
 	> * {width: 200px;}
 
 	li {padding: 5px 0px; white-space: nowrap; transition: .2s ease}
@@ -436,6 +434,8 @@ footer {
 	li:hover {font-weight: 600;}
 
 }
+
+.button_circle {display: none;}
 
 #service_lines {
 	position: absolute;
@@ -826,15 +826,24 @@ figcaption {
 #service_box {
 	width: 100%;
 
-	> ul {	width: 100%;	text-align: center; }
+	> ul {	width: 100%;	text-align: center; transition: .4s ease;}
 
-	ul:nth-child(2) {display: none;}
-	ul:nth-child(3) {display: none;}
+	li:hover {font-weight: initial;}
 }
 
 #service_box:nth-child(1) {flex-wrap: wrap; justify-content: left;gap: 20px}
 
 #service_box:nth-child(2) li {	font-size: 36pt; padding: 12px 0px}
+
+#service_box:nth-child(2) {
+	flex-wrap: wrap;
+	height: 386px;
+	gap: 0;
+	overflow: hidden;
+	transition: .4s ease;
+}
+
+#service_lines  {bottom: initial; top: 0;}
 
 .service_button {
 	width: auto !important;
