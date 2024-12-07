@@ -467,13 +467,15 @@ footer {
 	margin-left: 45px;
 }
 
+.service_button:hover .button_circle {background-color: #1e1e1e;}
+
 .button_circle {
 	width: 25px;
 	height: 25px;
 	border: solid 1px #1e1e1e;
 	border-radius: 100px;
 	position: absolute;
-	background-color: #fcfcfc;
+	background-color: transparent;
 	transition: ease .2s;
 }
 
@@ -865,7 +867,7 @@ figcaption {
 #service_box {
 	li {	font-size: 36pt; padding: 12px 0px}
 
-	li:hover {font-weight: initial;}
+	li:hover {font-weight: 350;}
 }
 
 .service_button {

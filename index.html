@@ -248,15 +248,17 @@
         var logo = document.getElementById('logo');
         var navmix = document.getElementById('nav');
 
-        var maxScroll = 700; // Adjust based on how far down you want the effects to occur
         var blurElements = document.querySelectorAll('.blur');
         var darkenElements = document.querySelectorAll('.darken');
-        var blurValue = Math.min(scrollY / maxScroll * 20, 20); // Increase blur from 0 to 20px
-        var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
-        var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
 
 
         if (screenWidth > 980) {
+
+	        var maxScroll = 700; // Adjust based on how far down you want the effects to occur
+	        var blurValue = Math.min(scrollY / maxScroll * 20, 20); // Increase blur from 0 to 20px
+	        var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
+	        var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
+
             if (window.scrollY > 50 || document.documentElement.scrollTop > 50) {
                 grid.style.opacity = '1';
                 logo.style.top = '6vh';
@@ -284,12 +286,19 @@
                 grid.style.opacity = '0';
             }
 
-            // Select all service buttons, button circles, and s_text divs
+							// Select all service buttons, button circles, and s_text divs
 			const serviceButtons = document.querySelectorAll('.service_button');
 			const buttonCircles = document.querySelectorAll('.button_circle');
 			const sTextDivs = document.querySelectorAll('.s_text');
 
+			// Mark the first circle as pre-selected
+			if (buttonCircles[0]) {
+			  buttonCircles[0].dataset.selected = 'true';
+			}
+
+			// Attach event listeners to buttons
 			serviceButtons.forEach((button, index) => {
+			  // Click event for button behavior
 			  button.addEventListener('click', function () {
 			    // Reset all buttons
 			    serviceButtons.forEach(btn => {
@@ -302,7 +311,8 @@
 			    // Reset all circles
 			    buttonCircles.forEach(circle => {
 			      circle.style.backgroundColor = 'transparent'; // Reset circle background color
-			      circle.style.transform = 'translateX(0px)';
+			      circle.style.transform = 'translateX(0px)'; // Reset circle position
+			      circle.dataset.selected = 'false'; // Mark as unselected
 			    });
 
 			    // Apply styles to the clicked button
@@ -315,6 +325,7 @@
 			    if (buttonCircles[index]) {
 			      buttonCircles[index].style.backgroundColor = '#1e1e1e';
 			      buttonCircles[index].style.transform = 'translateX(-24px)';
+			      buttonCircles[index].dataset.selected = 'true'; // Mark as selected
 			    }
 
 			    // Apply translateY to all s_text divs
@@ -323,7 +334,22 @@
 			      text.style.transform = `translateY(${translateValue}px)`;
 			    });
 			  });
+
+			  // Hover events for button_circle interaction
+			  button.addEventListener('mouseover', () => {
+			    if (buttonCircles[index] && buttonCircles[index].dataset.selected !== 'true') {
+			      buttonCircles[index].style.backgroundColor = '#1e1e1e'; // Highlight circle
+			    }
+			  });
+
+			  button.addEventListener('mouseout', () => {
+			    // Reset background only if the circle is not selected
+			    if (buttonCircles[index] && buttonCircles[index].dataset.selected !== 'true') {
+			      buttonCircles[index].style.backgroundColor = 'transparent'; // Reset circle background color
+			    }
+			  });
 			});
+
 
         } else {
 
@@ -343,18 +369,18 @@
                 grid.style.opacity = '0';
             }
 
-            var maxScrollM = 1300; // Mobile
-            var opacityValueM = 1 - Math.min(scrollY / maxScrollM, 1); // Fade out from 1 to 0
-            var blurValueM = Math.min(scrollY / maxScrollM * 10, 10); // Increase blur from 0 to 20px
-            var darkenValueM = 1 - Math.min(scrollY / maxScrollM, 1);  // Fade out from 1 to 0
+            var maxScroll = 1300; // Mobile
+            var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
+            var blurValue = Math.min(scrollY / maxScroll * 10, 10); // Increase blur from 0 to 20px
+            var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
 
             blurElements.forEach(function(blur) {
-                blur.style.opacity = opacityValueM;
-                blur.style.filter = `blur(${blurValueM}px)`;
+                blur.style.opacity = opacityValue;
+                blur.style.filter = `blur(${blurValue}px)`;
             });
 
             darkenElements.forEach(function(darken) {
-                darken.style.filter = `brightness(${darkenValueM})`;
+                darken.style.filter = `brightness(${darkenValue})`;
             });
 
 			// Select all service buttons, button circles, and s_text divs
