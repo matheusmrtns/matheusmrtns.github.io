@@ -359,8 +359,12 @@ footer {
 	align-items: center;
 	justify-content: right;
 	flex: 1;
-	> img {width: 50%;}
+
+	> a {width: 50%}
+
 }
+
+#footlogo img {width: 100%}
 
 #email {
 	height: 100%;
@@ -860,10 +864,14 @@ footer {
 }
 
 #footlogo {
+
 	justify-content: center;
 	align-items: flex-start;
-	> img { width: 50vw; }
+
+	> a {width: 50vw;}
 }
+
+#footlogo img { width: 100%; }
 
 #email {
 	font-size: 5vw;

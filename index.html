@@ -230,7 +230,7 @@
   </section>
 
   <footer id="footer" class="ptext">
-  	<div id="footlogo"><img src="./images/verttebra_logo.svg"></div>
+  	<div id="footlogo"><a href="#header" onclick="lenis.scrollTo('#header')"><img src="./images/verttebra_logo.svg"></a></div>
   	<div id="email">hello@verttebra.com</div>
   </footer>
 
@@ -309,10 +309,11 @@
                 grid.style.opacity = '0';
             }
 
-            var maxScroll = 3000; // Mobile
-            var opacityValue = 1 - Math.min(5*scrollY / maxScroll, 1); // Fade out from 1 to 0
-            var blurValue = Math.min(5*scrollY / maxScroll * 10, 10); // Increase blur from 0 to 10px
-            var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
+            var maxScroll = 1000; // Mobile
+            var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
+            var blurValue = Math.min(scrollY / maxScroll * 10, 10); // Increase blur from 0 to 10px
+            var darkenValue = 1 - Math.min( scrollY/3/ maxScroll, 1);  // Fade out from 1 to 0
+            var parallaxValue = Math.min( - scrollY / 3); 
 
             blurElements.forEach(function(blur) {
                 blur.style.opacity = opacityValue;
@@ -322,6 +323,11 @@
             darkenElements.forEach(function(darken) {
                 darken.style.filter = `brightness(${darkenValue})`;
             });
+
+            parallaxElements.forEach(function(parallax) {
+               parallax.style.transform = `translateY(${parallaxValue}px)`;
+        	 });
+
 
         }
 
