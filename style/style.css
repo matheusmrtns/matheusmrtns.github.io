@@ -772,6 +772,24 @@ nav {
 	height: 100px;
 }
 
+#navigation {
+	flex-direction: column;
+	text-align: right;
+	font-size: 35pt;
+	line-height: 50pt;
+	overflow: hidden;
+	top: 4vw;
+	right: 5vw;
+	transition: .4s ease;
+}
+
+#icon {
+	width: 70px;
+	transition: .4s ease;
+}
+
+#icon:hover {transform: rotate(90deg);}
+
 #logo {
 	top: 30vh;
 }
@@ -786,10 +804,6 @@ nav {
 	font-size: 23pt;
 	line-height: 24pt;
 	top: 0;
-}
-
-#icon {
-	width: 30px;
 }
 
 #clock {

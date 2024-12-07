@@ -274,14 +274,14 @@
             }
 
             var maxScroll = 1500; // Adjust based on how far down you want the effects to occur
-	        var blurValue = Math.min(7*scrollY / maxScroll * 20, 20); // Increase blur from 0 to 20px
+	        //var blurValue = Math.min(7*scrollY / maxScroll * 20, 20); // Increase blur from 0 to 20px
 	        var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
 	        var opacityValue = 1 - Math.min(7*scrollY / maxScroll, 1); // Fade out from 1 to 0
 	        var parallaxValue = Math.min( - scrollY / 2); 
 
             blurElements.forEach(function(blur) {
                 blur.style.opacity = opacityValue;
-                blur.style.filter = `blur(${blurValue}px)`;
+                //blur.style.filter = `blur(${blurValue}px)`;
             });
 
             darkenElements.forEach(function(darken) {
@@ -312,13 +312,13 @@
 
             var maxScroll = 1000; // Mobile
             var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
-            var blurValue = Math.min(scrollY / maxScroll * 10, 10); // Increase blur from 0 to 10px
+            //var blurValue = Math.min(scrollY / maxScroll * 10, 10); // Increase blur from 0 to 10px
             var darkenValue = 1 - Math.min( scrollY/3/ maxScroll, 1);  // Fade out from 1 to 0
             var parallaxValue = Math.min( - scrollY / 3); 
 
             blurElements.forEach(function(blur) {
                 blur.style.opacity = opacityValue;
-                blur.style.filter = `blur(${blurValue}px)`;
+                //blur.style.filter = `blur(${blurValue}px)`;
             });
 
             darkenElements.forEach(function(darken) {
