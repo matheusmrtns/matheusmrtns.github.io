@@ -81,7 +81,7 @@
 
 <section id="main">
 
-	<div id="services" class="ptext color">
+	<div id="services" class="font color">
 		<div id="service_title">
 			<div class="service_button">GRAPHIC DESIGN</div>
 			<div class="service_button">ART DIRECTION</div>
@@ -286,10 +286,45 @@
                 grid.style.opacity = '0';
             }
 
-							// Select all service buttons, button circles, and s_text divs
-			const serviceButtons = document.querySelectorAll('.service_button');
-			const buttonCircles = document.querySelectorAll('.button_circle');
-			const sTextDivs = document.querySelectorAll('.s_text');
+        } else {
+
+           if (window.scrollY > 50 || document.documentElement.scrollTop > 50) {
+                logo.style.top = '100px';
+                logo.style.width = '270px';
+                navmix.style.mixBlendMode = 'difference';
+            } else {
+                logo.style.top = '30vh';
+                logo.style.width = '600px';
+                navmix.style.mixBlendMode = 'normal';
+            }
+
+            if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
+                grid.style.opacity = '1';
+            } else {
+                grid.style.opacity = '0';
+            }
+
+            var maxScroll = 1300; // Mobile
+            var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
+            var blurValue = Math.min(scrollY / maxScroll * 10, 10); // Increase blur from 0 to 20px
+            var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
+
+            blurElements.forEach(function(blur) {
+                blur.style.opacity = opacityValue;
+                blur.style.filter = `blur(${blurValue}px)`;
+            });
+
+            darkenElements.forEach(function(darken) {
+                darken.style.filter = `brightness(${darkenValue})`;
+            });
+
+        }
+
+		const serviceButtons = document.querySelectorAll('.service_button');
+		const buttonCircles = document.querySelectorAll('.button_circle');
+		const sTextDivs = document.querySelectorAll('.s_text');
+
+         if (screenWidth > 1520) {
 
 			// Mark the first circle as pre-selected
 			if (buttonCircles[0]) {
@@ -350,43 +385,7 @@
 			  });
 			});
 
-
-        } else {
-
-           if (window.scrollY > 50 || document.documentElement.scrollTop > 50) {
-                logo.style.top = '100px';
-                logo.style.width = '270px';
-                navmix.style.mixBlendMode = 'difference';
-            } else {
-                logo.style.top = '30vh';
-                logo.style.width = '600px';
-                navmix.style.mixBlendMode = 'normal';
-            }
-
-            if (window.scrollY > 700 || document.documentElement.scrollTop > 700) {
-                grid.style.opacity = '1';
-            } else {
-                grid.style.opacity = '0';
-            }
-
-            var maxScroll = 1300; // Mobile
-            var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
-            var blurValue = Math.min(scrollY / maxScroll * 10, 10); // Increase blur from 0 to 20px
-            var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
-
-            blurElements.forEach(function(blur) {
-                blur.style.opacity = opacityValue;
-                blur.style.filter = `blur(${blurValue}px)`;
-            });
-
-            darkenElements.forEach(function(darken) {
-                darken.style.filter = `brightness(${darkenValue})`;
-            });
-
-			// Select all service buttons, button circles, and s_text divs
-			const serviceButtons = document.querySelectorAll('.service_button');
-			const buttonCircles = document.querySelectorAll('.button_circle');
-			const sTextDivs = document.querySelectorAll('.s_text');
+         } else {
 
 			serviceButtons.forEach((button, index) => {
 			  button.addEventListener('click', function () {
@@ -422,8 +421,8 @@
 			  });
 			});
 
+         }
 
-        }
     });
 });
 
