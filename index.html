@@ -82,7 +82,7 @@
 <section id="main">
 
 	<div id="services" class="ptext color">
-		<div id="service_box">
+		<div id="service_title">
 			<div class="service_button">GRAPHIC DESIGN</div>
 			<div class="service_button">ART DIRECTION</div>
 			<div class="service_button">3D GRAPHICS</div>
@@ -283,6 +283,47 @@
             } else {
                 grid.style.opacity = '0';
             }
+
+            // Select all service buttons, button circles, and s_text divs
+			const serviceButtons = document.querySelectorAll('.service_button');
+			const buttonCircles = document.querySelectorAll('.button_circle');
+			const sTextDivs = document.querySelectorAll('.s_text');
+
+			serviceButtons.forEach((button, index) => {
+			  button.addEventListener('click', function () {
+			    // Reset all buttons
+			    serviceButtons.forEach(btn => {
+			      btn.style.width = '100%';
+			      btn.style.backgroundColor = 'transparent'; // Reset background color
+			      btn.style.color = 'initial'; // Reset text color
+			      btn.style.marginLeft = '0'; // Reset margin
+			    });
+
+			    // Reset all circles
+			    buttonCircles.forEach(circle => {
+			      circle.style.backgroundColor = 'transparent'; // Reset circle background color
+			      circle.style.transform = 'translateX(0px)';
+			    });
+
+			    // Apply styles to the clicked button
+			    this.style.width = '90%';
+			    this.style.backgroundColor = '#1e1e1e';
+			    this.style.color = '#fcfcfc';
+			    this.style.marginLeft = '45px';
+
+			    // Style the corresponding circle
+			    if (buttonCircles[index]) {
+			      buttonCircles[index].style.backgroundColor = '#1e1e1e';
+			      buttonCircles[index].style.transform = 'translateX(-24px)';
+			    }
+
+			    // Apply translateY to all s_text divs
+			    const translateValue = -378 * index; // Calculate translation value based on button index
+			    sTextDivs.forEach(text => {
+			      text.style.transform = `translateY(${translateValue}px)`;
+			    });
+			  });
+			});
 
         } else {
 
