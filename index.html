@@ -313,7 +313,6 @@
             var opacityValue = 1 - Math.min(5*scrollY / maxScroll, 1); // Fade out from 1 to 0
             var blurValue = Math.min(5*scrollY / maxScroll * 10, 10); // Increase blur from 0 to 10px
             var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
-            var parallaxValue = Math.min( - scrollY / 2); 
 
             blurElements.forEach(function(blur) {
                 blur.style.opacity = opacityValue;
@@ -323,10 +322,6 @@
             darkenElements.forEach(function(darken) {
                 darken.style.filter = `brightness(${darkenValue})`;
             });
-
-            parallaxElements.forEach(function(parallax) {
-               parallax.style.transform = `translateY(${parallaxValue}px)`;
-         });
 
         }
 
