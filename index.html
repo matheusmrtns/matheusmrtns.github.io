@@ -68,7 +68,7 @@
 		</div>
 	</div>
 
-	<div id="ov"><img id="ovimg" src="./images/factory render 10_24.jpg" class="darken"></div>
+	<div id="ov"><img id="ovimg" src="./images/factory render 10_24.jpg" class="darken parallax"></div>
 
 	<!--<div id="ov">
 	    <video autoplay muted loop playsinline>
@@ -239,9 +239,6 @@
 	window.addEventListener('scroll', function() {
     requestAnimationFrame(() => {
 
-        // var Parallax = document.getElementById('ovimg');
-        // var ParallaxValue =  1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
-
         var scrollY = window.scrollY || document.documentElement.scrollTop;
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var grid = document.getElementById('grid');
@@ -250,26 +247,36 @@
 
         var blurElements = document.querySelectorAll('.blur');
         var darkenElements = document.querySelectorAll('.darken');
-
+        var parallaxElements = document.querySelectorAll('.parallax');
 
         if (screenWidth > 980) {
-
-	        var maxScroll = 700; // Adjust based on how far down you want the effects to occur
-	        var blurValue = Math.min(scrollY / maxScroll * 20, 20); // Increase blur from 0 to 20px
-	        var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
-	        var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
 
             if (window.scrollY > 50 || document.documentElement.scrollTop > 50) {
                 grid.style.opacity = '1';
                 logo.style.top = '6vh';
                 logo.style.width = '150px';
                 navmix.style.mixBlendMode = 'difference';
+
             } else {
+
                 grid.style.opacity = '0';
                 logo.style.top = '42vh';
                 logo.style.width = '600px';
                 navmix.style.mixBlendMode = 'normal';
+
             }
+
+             if (window.scrollY > 400 || document.documentElement.scrollTop > 400) {
+                grid.style.opacity = '1';
+            } else {
+                grid.style.opacity = '0';
+            }
+
+            var maxScroll = 1500; // Adjust based on how far down you want the effects to occur
+	        var blurValue = Math.min(7*scrollY / maxScroll * 20, 20); // Increase blur from 0 to 20px
+	        var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
+	        var opacityValue = 1 - Math.min(7*scrollY / maxScroll, 1); // Fade out from 1 to 0
+	        var parallaxValue = Math.min( - scrollY / 2); 
 
             blurElements.forEach(function(blur) {
                 blur.style.opacity = opacityValue;
@@ -280,11 +287,9 @@
                 darken.style.filter = `brightness(${darkenValue})`;
             });
 
-            if (window.scrollY > 400 || document.documentElement.scrollTop > 400) {
-                grid.style.opacity = '1';
-            } else {
-                grid.style.opacity = '0';
-            }
+          parallaxElements.forEach(function(parallax) {
+               parallax.style.transform = `translateY(${parallaxValue}px)`;
+         });
 
         } else {
 
@@ -304,10 +309,11 @@
                 grid.style.opacity = '0';
             }
 
-            var maxScroll = 1300; // Mobile
-            var opacityValue = 1 - Math.min(scrollY / maxScroll, 1); // Fade out from 1 to 0
-            var blurValue = Math.min(scrollY / maxScroll * 10, 10); // Increase blur from 0 to 20px
+            var maxScroll = 3000; // Mobile
+            var opacityValue = 1 - Math.min(5*scrollY / maxScroll, 1); // Fade out from 1 to 0
+            var blurValue = Math.min(5*scrollY / maxScroll * 10, 10); // Increase blur from 0 to 10px
             var darkenValue = 1 - Math.min(scrollY / maxScroll, 1);  // Fade out from 1 to 0
+            var parallaxValue = Math.min( - scrollY / 2); 
 
             blurElements.forEach(function(blur) {
                 blur.style.opacity = opacityValue;
@@ -317,6 +323,10 @@
             darkenElements.forEach(function(darken) {
                 darken.style.filter = `brightness(${darkenValue})`;
             });
+
+            parallaxElements.forEach(function(parallax) {
+               parallax.style.transform = `translateY(${parallaxValue}px)`;
+         });
 
         }
 

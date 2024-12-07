@@ -453,11 +453,11 @@ footer {
 .service_button {
 	width: 100%;
 	white-space: nowrap;
-	font-size: 30pt;
+	font-size: 32pt;
 	font-weight: 350;
 	border: solid 1px #1e1e1e;
 	border-radius: 100px;
-	padding: 13px 0px 13px 0px;
+	padding: 10px 0px 10px 0px;
 	text-align: center;
 	transition: ease .2s;
 }
