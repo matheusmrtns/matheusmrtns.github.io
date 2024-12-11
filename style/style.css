@@ -165,6 +165,8 @@ nav {
 	width: 25px;
 }
 
+#icon_mobile {display: none}
+
 .invert {mix-blend-mode: difference;}
 
 #clock {
@@ -374,7 +376,7 @@ footer {
 #email {
 	height: 100%;
 	font-size: 3vw;
-	font-weight: 520;
+	font-weight: 350;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -383,7 +385,7 @@ footer {
 	flex: 2;
 }
 
-#email:hover {font-weight: 350}
+#email:hover {font-weight: 500}
 
 #title_w {
 	margin-top: 0px;
@@ -694,9 +696,10 @@ article:hover #bline {
  }
 
  	#services {
-		height: 1400px;
+		height: 70svh;
 		width: 80%;
 		gap: 100px;
+		padding-top: 100px;
 	}
 
 	#service_title {
@@ -795,30 +798,52 @@ nav {
 #navigation > *:nth-child(2) {display: initial;}
 
 #navbox {
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none; /* Prevent interaction when hidden */
 }
 
 #navbox > * {
-	opacity: 0;
-	transition: .2s ease;
-	margin-top: -10px;
-	pointer-events: none;
+  transition: margin-top 0.3s ease, opacity 0.3s ease;
+  margin-top: -10px;
+  opacity: 0;
 }
 
-#navbox > *:nth-child(2) {transition-delay: .1s}
-#navbox > *:nth-child(3) {transition-delay: .2s}
-
-#icon {
-	width: 70px;
-	transition: .4s ease;
+#navbox > *:nth-child(2) {
+  transition-delay: 0.1s;
 }
 
-#navigation:hover #icon {transform: rotate(180deg);}
+#navbox > *:nth-child(3) {
+  transition-delay: 0.2s;
+}
 
-#navigation:hover #navbox > * {
-	opacity: 1;
+.navbox-visible {
+  pointer-events: visible !important;
+}
+
+.navbox-visible > * {
+  margin-top: 0 !important;
+  opacity: 1 !important;
+}
+
+#icon_mobile {
+	display: block;
+	width: 100%;
+
+	> img {width: 70px;transition: .4s ease;}
+
+}
+
+#icon_mobile img.rotated {
+    transform: rotate(180deg); /* Rotate image 180 degrees */
+}
+
+#icon {display: none;}
+
+.show {display: flex;}
+
+.show > * {
 	margin-top: 0;
-	pointer-events: initial;
 }
 
 #logo {
@@ -907,6 +932,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: column-reverse;
+	padding-bottom: 100px;
 	> * { width:100%; height: initial; }
 }
 
@@ -948,6 +974,10 @@ figcaption {
 #grid {
 	width: 80%;
 	justify-content: center;
+}
+
+#grid:nth-child(2) {
+  padding-top: 200px;
 }
 
 #block {

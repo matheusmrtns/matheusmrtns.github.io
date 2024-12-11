@@ -2,17 +2,16 @@ const $Ball = document.querySelector('.ball');
 const $hover = document.querySelectorAll('a'); // Selecting all anchor tags
 const cursor = document.getElementById("cursor");
 
-// Listeners
-
+// Listeners for link hover effects
 $hover.forEach(link => {
   link.addEventListener('mouseenter', onMouseHoverLink);
   link.addEventListener('mouseleave', onMouseHoverOutLink);
 });
 
+// Custom cursor movement
 document.body.addEventListener('mousemove', function(e) {
   cursor.style.left = e.clientX + "px";
   cursor.style.top = e.clientY + "px";
-  onMouseMove(e); // Call the onMouseMove function
 });
 
 // Function for link hover effect
