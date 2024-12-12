@@ -201,8 +201,8 @@ nav {
 }
 	
 header {
-	height: 100svh;
-	width: 100svw;
+	height: 100dvh;
+	width: 100dvw;
 }
 
 #headerbox {
@@ -761,9 +761,14 @@ article:hover #block {
 	display:none;
 }
 
+header {
+	height: 100lvh;
+	width: 100lvw;
+}
+
 #headerbox {
-	width: 90%;
-	height: 95%;
+	width: 90svw;
+	height: 90svh;
 	top: 2.5%;
 	flex-direction: column;
 	gap: 20px;
