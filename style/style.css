@@ -337,13 +337,9 @@ header {
 
 h1 {
 	font-size: 40pt;
-	font-weight: 520;
+	font-weight: 500;
 	letter-spacing: -2px;
 	transition: .4s ease;
-}
-
-h1:hover {
-	font-weight: 200;
 }
 
 h2 {
@@ -429,7 +425,7 @@ footer {
 	width: 1400px;
 	height: 800px;
 	margin-top: 100px;
-	gap: 50px;
+	gap: 3.57%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -443,7 +439,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	transition: ease .4s;
-	gap: 15px;
+	gap: 1.1%;
 }
 
 #service_box {
@@ -478,11 +474,11 @@ footer {
 .service_button {
 	width: 100%;
 	white-space: nowrap;
-	font-size: 32pt;
+	font-size: 265%;
 	font-weight: 350;
 	border: solid 1px #1e1e1e;
 	border-radius: 100px;
-	padding: 10px 0px 10px 0px;
+	padding: .8% 0 .8% 0;
 	text-align: center;
 	transition: ease .2s;
 }
@@ -491,7 +487,7 @@ footer {
 	width: 90%;
 	background-color: #1e1e1e;
 	color: #fcfcfc;
-	margin-left: 45px;
+	margin-left: 3.25%;
 }
 
 .service_button:hover .button_circle {background-color: #1e1e1e;}
@@ -506,9 +502,9 @@ footer {
 	transition: ease .2s;
 }
 
-.button_circle:nth-child(4) { left: 25px; background-color: #1e1e1e; transform: translateX(-24px);}
-.button_circle:nth-child(5) { left: 497px; }
-.button_circle:nth-child(6) { left: 969px; }
+.button_circle:nth-child(4) { left: 2%; background-color: #1e1e1e; transform: translateX(-86%);}
+.button_circle:nth-child(5) { left: 35.45%; }
+.button_circle:nth-child(6) { left: 69.1%; }
 
 #grid {
 	margin: auto;
@@ -704,48 +700,19 @@ article:hover #bline {
 	flex-basis: 31%;
  }
 
- #grid {
+ #grid , #services {
 	width: 85%;
- }
+ } 
 
- 	#services {
-		height: 70svh;
-		width: 80%;
-		gap: 100px;
-		padding-top: 100px;
-	}
-
-	#service_title {
-		flex-wrap: wrap;
-		justify-content: left;
-		gap: 20px;
-	}
-
-	.s_text li {font-size: 36pt;}
-
-	.service_button {
-		width: auto !important;
-		font-size: 50pt;
-		padding: 13px 90px 13px 150px;
-	}
-
-	.service_button:nth-child(1) {
-		background-color: #1e1e1e;
-		color: #fcfcfc;
-		padding-left: 90px;
-		margin-left:100px;
+  .service_button {
+	font-size: 2.5vw;
+	padding: 1% 0 1% 0;
 	}
 
 	.button_circle {
-		display: initial;
-		width: 40px;
-		height: 40px;
-		left: 30px !important;
+		width: 1.6vw;
+		height: 1.6vw;
 	}
-
-	.button_circle:nth-child(4) { top: 33px; background-color: #1e1e1e; transform: translateX(0);}
-	.button_circle:nth-child(5) { margin: auto 0; }
-	.button_circle:nth-child(6) { bottom: 34px; }
 
  }
 
@@ -939,7 +906,46 @@ nav {
 	height: 30px;
 }
 
-.s_text li:hover {font-weight: 300;}
+ 	#services {
+		height: 70svh;
+		width: 80%;
+		gap: 100px;
+		padding-top: 100px;
+	}
+
+	#service_title {
+		flex-wrap: wrap;
+		justify-content: left;
+		gap: 20px;
+	}
+
+	.s_text li {font-size: 36pt;}
+
+	.s_text li:hover {font-weight: 300;}
+
+	.service_button {
+		width: auto !important;
+		font-size: 50pt;
+		padding: 13px 90px 13px 150px;
+	}
+
+	.service_button:nth-child(1) {
+		background-color: #1e1e1e;
+		color: #fcfcfc;
+		padding-left: 90px;
+		margin-left:100px;
+	}
+
+	.button_circle {
+		display: initial;
+		width: 40px;
+		height: 40px;
+		left: 30px !important;
+	}
+
+	.button_circle:nth-child(4) { top: 33px; background-color: #1e1e1e; transform: translateX(0);}
+	.button_circle:nth-child(5) { margin: auto 0; }
+	.button_circle:nth-child(6) { bottom: 34px; }
 
 footer {
 	flex-wrap: wrap;

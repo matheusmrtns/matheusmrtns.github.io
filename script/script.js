@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       updateStyles({
         top: {
           elements: [logo],
-          value: isLargeScreen ? (scrollY > 50 ? '6vh' : '42vh') : (scrollY > 50 ? '100px' : '30vh')
+          value: isLargeScreen ? (scrollY > 50 ? '60px' : '42vh') : (scrollY > 50 ? '100px' : '30vh')
         },
         width: {
           elements: [logo],
@@ -98,11 +98,11 @@ document.addEventListener('DOMContentLoaded', function () {
         this.style.width = '90%';
         this.style.backgroundColor = '#1e1e1e';
         this.style.color = '#fcfcfc';
-        this.style.marginLeft = '45px';
+        this.style.marginLeft = '3.25%';
 
         if (buttonCircles[index]) {
           buttonCircles[index].style.backgroundColor = '#1e1e1e';
-          buttonCircles[index].style.transform = 'translateX(-24px)';
+          buttonCircles[index].style.transform = 'translateX(-86%)';
           buttonCircles[index].dataset.selected = 'true';
         }
 
