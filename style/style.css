@@ -201,8 +201,8 @@ nav {
 }
 	
 header {
-	height: 100dvh;
-	width: 100dvw;
+	height: 100svh;
+	width: 100svw;
 }
 
 #headerbox {
@@ -374,6 +374,7 @@ footer {
 #footlogo img {width: 100%}
 
 #email {
+	position: relative;
 	height: 100%;
 	font-size: 3vw;
 	font-weight: 350;
@@ -385,7 +386,19 @@ footer {
 	flex: 2;
 }
 
-#email:hover {font-weight: 500}
+#copied {
+	position: absolute;
+	font-size: 25pt;
+	font-weight: 550;
+	transform: translateX(150px) translateY(-70px);
+	transition: .2s ease;
+	opacity: 0;
+}
+
+#copied.active{
+	transform: translateX(150px) translateY(-80px);
+	opacity: 1;
+}
 
 #title_w {
 	margin-top: 0px;
@@ -761,14 +774,9 @@ article:hover #block {
 	display:none;
 }
 
-header {
-	height: 100lvh;
-	width: 100lvw;
-}
-
 #headerbox {
-	width: 90svw;
-	height: 90svh;
+	width: 90%;
+	height: 95%;
 	top: 2.5%;
 	flex-direction: column;
 	gap: 20px;
@@ -953,6 +961,16 @@ footer {
 
 #email {
 	font-size: 5vw;
+}
+
+#copied {
+	font-size: 45pt;
+	font-weight: 500;
+	transform: translateX(200px) translateY(-120px);
+}
+
+#copied.active{
+	transform: translateX(200px) translateY(-130px);
 }
 
 #workpage {
