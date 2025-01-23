@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
           buttonCircles[index].style.backgroundColor = '#1e1e1e';
         }
 
-        const translateValue = -378 * index;
+        const translateValue = -467 * index;
         sTextDivs.forEach(text => text.style.transform = `translateY(${translateValue}px)`);
       });
     });

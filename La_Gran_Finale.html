@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>VERTTEBRA</title>
-  <meta name="description" content="Matheus Martins is a Brazilian graphic designer and art director based in Barcelona. Experienced with graphic design, 3D modelling, illustration, photo editing and art direction">
+  <title>W Barcelona - La Gran Finale</title>
+  <meta name="description" content="Verttebra is a creative studio based in Barcelona. We specialize in graphic design, art direction and 3D graphics.">
   <link href="./style/style.css" type="text/css" rel="stylesheet">
   <link href="./style/style_w.css" type="text/css" rel="stylesheet">
   <meta charset="UTF-8">
@@ -16,7 +16,7 @@
   <!--<script src="./script/work_scroll.js"></script>-->
 </head>
 
-<body onload="startTime()" id="body">
+<body onload="startTime()" id="body" class="work">
 
 	<nav class="ptext colorw invert">
 
@@ -46,7 +46,7 @@
 
 	<div class="ball" id="cursor"></div>
 
-	<div id="LGFvid" class="marginB">
+	<div id="LGFvid">
 		<img src="./images/pageimages/LGF/W_logo.png">
     <video autoplay muted loop playsinline>
 	    <source src="./images/pageimages/LGF/gran_finaleV.mp4" type="video/mp4" />
@@ -54,35 +54,36 @@
 	 	</video>
 	</div>
 
-	<div id="workpage">
+	<section id="main">
+		<div id="workpage">
 
-	 		<div id="title_w" class="title ptext color">
-				<h1>La Gran Finale</h1>
+	 		<div id="title" class="ptext color marginB">
+				<h1>W Barcelona's La Gran Finale</h1>
 				<h2>2022&ensp;·&ensp;Barcelona, Spain</h2>
 				<br><br>
 				<span id="subtitle_W"><h2>Visual Identity &ensp;·&ensp; 3D Modelling &ensp;·&ensp; Print</h2></span>
 			</div>
 
-	 		<div class="textbox ptext marginB">
-	 		<p>
+	 		<p class="textbox ptext marginB">
 	 			<span class="bold">La Gran Finale</span> is W Barcelona's 2023 new year's eve celebration. This project required an identity design along with promotional content and physical materials for guest interaction.<br><br>The theme for the party this year was the (20)20s. A revival of the 1920s party culture a century later. Think of The Great Gatsby and big feather boas.
 	 		</p>
-	 		</div>
 
-	 		<div class="posters marginB">
-	 			<video autoplay muted loop playsinline class="border">
+	 		<div class="media_array extra_wide marginB" style="width: 70vw;">
+	 			<video autoplay muted loop playsinline class="border" style="flex: 1;">
 	 				<source src="./images/pageimages/LGF/LGFv1.mp4" type="video/mp4" />
 	    		video not found
 	 			</video>
-	 			<video autoplay muted loop playsinline class="border">
+	 			<video autoplay muted loop playsinline class="border" style="flex: 1;">
 	 				<source src="./images/pageimages/LGF/LGFv2.mp4" type="video/mp4" />
 	    		video not found
 	 			</video>
-	 			<video autoplay muted loop playsinline class="border" id="LGFv3">
+	 			<video autoplay muted loop playsinline class="border" id="LGFv3" style="flex: 1;">
 	 				<source src="./images/pageimages/LGF/LGFv1.mp4" type="video/mp4" />
 	    		video not found
 	 			</video>
 	 		</div>
+
+
 
 	 		<div class="textbox ptext marginB">
 	 			<p>
@@ -108,6 +109,7 @@
 	 		<img class="marginB textbox" src="./images/pageimages/LGF/LGF_marco.png">
 
 	</div>
+</section>
 
 	<footer id="footer" class="ptext">
   	<div id="footlogo"><a href="./index.html"><img src="./images/verttebra_logo.svg"></a></div>

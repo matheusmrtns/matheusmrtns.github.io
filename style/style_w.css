@@ -22,6 +22,8 @@
 	top: 0px !important;
 }
 
+h1 {line-height: 45pt;}
+
 #dvid {
 	width: 100%;
 	height: 600px;
@@ -30,8 +32,8 @@
 }
 
 #LGFvid {
-	margin-top: 5vh;
-	height: 90vh;
+	margin-top: 10vh;
+	height: 85vh;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -65,13 +67,6 @@
 
 #logo_1DF {
 	width: 350px;
-}
-
-.posters {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	gap: 1%;
 }
 
 #palette {
@@ -211,6 +206,12 @@
 	width: 40vw;
  }
 
+ #logo_bassols {
+	position: absolute;
+	z-index: 1;
+	width: 11.5vw;
+ }
+
 @media only screen and (max-width: 980px) {
 
 	#palette1 , #ptlines , #ptdf , #LGFv3 {display: none !important;}
@@ -219,6 +220,10 @@
 
 #logo_AVS2D {
 	width: 80vw;
+ }
+
+ #logo_bassols {
+	width: 40vw;
  }
 
 	.posterA {
@@ -285,6 +290,10 @@
 }
 
 .posters {
+	gap: 2%;
+}
+
+.image_array {
 	gap: 2%;
 }
 
