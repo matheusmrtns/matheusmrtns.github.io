@@ -50,7 +50,7 @@ html.lenis, html.lenis body {
   left: var(--x, 0);
   background: #aaa;
   mix-blend-mode: soft-light;
-  z-index: 3;
+  z-index: 4;
   backdrop-filter: blur(5px);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   transition: background 0.3s ease;
@@ -137,7 +137,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 1;
+	z-index: 3;
 	transition: top 0.3s;
 }
 
@@ -189,7 +189,6 @@ nav {
 	position: fixed;
 	transition: .6s ease;
 	top: 42vh;
-	z-index: 1;
 }
 
 #logoW {
@@ -197,7 +196,6 @@ nav {
 	position: fixed;
 	transition: .6s ease;
 	top: 60px;
-	z-index: 1;
 }
 	
 header {
@@ -215,6 +213,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 }
 
 .heroBasic {
@@ -227,7 +226,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	pointer-events: none;
-	z-index: -1;
+	z-index: 0;
 }
 
 .heroBasic video , #portada {
@@ -425,7 +424,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	z-index: 0;
+	z-index: 2;
 }
 
 #services {
@@ -467,7 +466,7 @@ footer {
 #service_lines {
 	position: absolute;
 	top: 0;
-	z-index: -2;
+	z-index: 0;
 	overflow: visible;
 
 	li {border-top: solid 1px black; font-size: 36pt;  line-height: 55.8pt; }
@@ -544,7 +543,7 @@ article:hover img {
 	transform: scale(1.01);
 }
 
-article:hover figcaption {
+#grid article:hover figcaption {
 	bottom: -0.5%;
 }
 
@@ -564,7 +563,7 @@ article img {
 
 .border {border-radius: 7px; overflow: hidden;}
 
-figcaption {
+#grid figcaption {
 	font-size: 20pt;
 	font-weight: 520;
 	letter-spacing: -.5px;
@@ -573,9 +572,9 @@ figcaption {
 	padding: 0 2%;
 	position: absolute;
 	bottom: 4.28%;
-	z-index: -1;
 	transition: .4s ease;
 	line-height: 17pt;
+	z-index: -1;
 }
 
 #bline {
