@@ -981,7 +981,7 @@ h2 {
 	font-size: 30pt;
 }
 	
-figcaption {
+#grid figcaption {
 	bottom: -12vw;
 	font-size: 5vw;
 	line-height: 4vw;
@@ -1025,7 +1025,7 @@ article:hover img{
 	opacity: 1;
 }
 
-article:hover figcaption {
+article:hover #grid figcaption {
 	bottom: -12vw;
 }
 
