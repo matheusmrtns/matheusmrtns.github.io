@@ -895,7 +895,7 @@ nav {
 
  	#services {
 		height: 70svh;
-		width: 80%;
+		width: 85%;
 		gap: 100px;
 		padding-top: 100px;
 	}
@@ -980,17 +980,9 @@ h1 {
 h2 {
 	font-size: 30pt;
 }
-	
-#grid figcaption {
-	bottom: -12vw;
-	font-size: 5vw;
-	line-height: 4vw;
-}	
-
-.desc {font-size: 3.7vw;}
 
 #grid {
-	width: 80%;
+	width: 85%;
 	justify-content: center;
 }
 
@@ -1002,6 +994,14 @@ h2 {
 	background-color: transparent;
 	height: 100%;
 }
+
+#grid figcaption {
+	bottom: -12vw;
+	font-size: 5vw;
+	line-height: 4vw;
+}	
+
+.desc {font-size: 3.7vw;}
 
 .border {border-radius: 10px; overflow: hidden;}
 
