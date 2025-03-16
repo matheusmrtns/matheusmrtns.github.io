@@ -687,7 +687,7 @@ article:hover #bline {
 
 @media only screen and (max-width: 1520px) {
 
-	figcaption {
+	#grid figcaption {
 	font-size: 18pt;
 	}
 
@@ -1025,7 +1025,7 @@ article:hover img{
 	opacity: 1;
 }
 
-article:hover #grid figcaption {
+#grid article:hover figcaption {
 	bottom: -12vw;
 }
 
