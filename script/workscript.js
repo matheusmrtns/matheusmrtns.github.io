@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-
   const parallaxElements = document.querySelectorAll('.parallax');
-  
+
   // Dropdown menu elements
   const iconMobile = document.getElementById('icon_mobile');
   const navbox = document.getElementById('navbox');
@@ -23,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
       const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
       const isLargeScreen = screenWidth > 980;
-      const maxScroll = isLargeScreen ? 1500 : 1000;
+      const maxScroll = isLargeScreen ? 700 : 1000;
 
-      const parallaxValue = isLargeScreen ? 
-        Math.min(-scrollY / 2) : 
-        Math.min(-scrollY / 4); // Smoother parallax on mobile (slower movement)
+      const parallaxValue = isLargeScreen ?
+        Math.max(-scrollY / 2, -maxScroll) :
+        Math.max(-scrollY / 4, -maxScroll); // mobile (slower movement)
 
       // Update styles for elements with parallax
       updateStyles({
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
           value: `translateY(${parallaxValue}px)`
         }
       });
-
     });
   });
 

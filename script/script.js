@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
       const isLargeScreen = screenWidth > 980;
-      const maxScroll = isLargeScreen ? 1500 : 1000;
+      const maxScroll = isLargeScreen ? 700 : 1000;
       const opacityValue = 1 - Math.min(scrollY / maxScroll, 1);
 
       // Adjust darken effect speed for mobile (slower transition)
@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
         1 - Math.min(scrollY / maxScroll, 1) : 
         1 - Math.min(scrollY / 2 / maxScroll, 1); // Slower darken on mobile
 
-      const parallaxValue = isLargeScreen ? 
-        Math.min(-scrollY / 2) : 
-        Math.min(-scrollY / 4); // Smoother parallax on mobile (slower movement)
+      const parallaxValue = isLargeScreen ?
+        Math.max(-scrollY / 2, -maxScroll) :
+        Math.max(-scrollY / 4, -maxScroll); // mobile (slower movement)
 
       // Update logo, navmix, and grid opacity
       updateStyles({
