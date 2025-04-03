@@ -640,7 +640,11 @@ article:hover #bline {
 
 }
 
-.extra_wide {width: 120%;}
+.extra_wide {
+	width: 120%;
+	flex-shrink: 0;
+	object-fit: cover;
+}
 
 .videoH , .videoV {
 	margin: auto;
