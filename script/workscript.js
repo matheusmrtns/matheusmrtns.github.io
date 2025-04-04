@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const parallaxValue = isLargeScreen ?
         Math.max(-scrollY / 2, -maxScroll) :
-        Math.max(-scrollY / 4, -maxScroll); // mobile (slower movement)
+        Math.max(-scrollY / 3, -maxScroll); // mobile (slower movement)
 
       // Update styles for elements with parallax
       updateStyles({
