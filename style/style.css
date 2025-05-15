@@ -437,7 +437,6 @@ footer {
 
 #services {
 	width: 1400px;
-	height: 70svh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -709,7 +708,7 @@ article:hover #bline {
  article {
  	height: 35vw;
 	width: 100%;
-	flex-basis: 31%;
+	flex-basis: 30%;
  }
 
  #grid , #services {
@@ -913,9 +912,10 @@ nav {
 	#works {width: 90%}
 
  	#services {
-		height: 70svh;
 		width: 90%;
+		height: initial;
 		padding-top: 100px;
+		margin-bottom: 400px;
 	}
 
 	#service_title {
