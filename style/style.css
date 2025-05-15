@@ -561,6 +561,7 @@ article img {
 	overflow:hidden;
 	transition: .3s ease;
 	background-color: white;
+	object-fit: cover;
 }
 
 .border {border-radius: 7px; overflow: hidden;}
@@ -988,7 +989,7 @@ h2 {
 }
 
 #grid {
-	width: 85%;
+	width: 90%;
 	justify-content: center;
 }
 
@@ -997,8 +998,9 @@ h2 {
 }
 
 #block {
-	background-color: transparent;
+	background-color: green;
 	height: 100%;
+	> img {object-fit: cover; height: 100%; width: 100%;}
 }
 
 #grid figcaption {
@@ -1014,7 +1016,7 @@ h2 {
 article {
 	margin-bottom: 27vw;
 	width: 100%;
-	height: 106vw;
+	height: 65svh;
 	flex-basis: initial;
 	overflow: visible;
 }
