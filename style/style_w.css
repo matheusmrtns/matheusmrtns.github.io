@@ -200,17 +200,16 @@ h1 {line-height: 45pt;}
 	height: 90vh;
 }
 
-#logo_AVS2D {
+.pagelogo {
 	position: absolute;
 	z-index: 1;
-	width: 40vw;
- }
+}
 
- #logo_bassols {
-	position: absolute;
-	z-index: 1;
-	width: 11.5vw;
- }
+#logo_AVS2D {	width: 40vw;}
+
+ #logo_bassols {width: 11.5vw;}
+
+ #logo_RGS {width: 15vw;}
 
 @media only screen and (max-width: 980px) {
 
@@ -218,13 +217,11 @@ h1 {line-height: 45pt;}
 
 	#palette2 {display: block;}
 
-#logo_AVS2D {
-	width: 80vw;
- }
+	#logo_AVS2D { 	width: 80vw; }
 
- #logo_bassols {
-	width: 40vw;
- }
+  #logo_bassols { width: 40vw; }
+
+  #logo_RGS {width: 50vw}
 
 	.posterA {
 	height: initial;
