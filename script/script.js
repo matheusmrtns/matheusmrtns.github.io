@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       updateStyles({
         top: {
           elements: [logo],
-          value: isLargeScreen ? (scrollY > 50 ? '60px' : '42vh') : (scrollY > 50 ? '100px' : '30vh')
+          value: isLargeScreen ? (scrollY > 50 ? '60px' : '42vh') : (scrollY > 50 ? '100px' : '35vh')
         },
         width: {
           elements: [logo],
