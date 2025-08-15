@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   //Email copy
-  document.getElementById('email').addEventListener('click', function () {
+  document.getElementById('email_copy').addEventListener('click', function () {
     const emailText = 'hello@verttebra.com'; // The text to be copied
     const copiedMessage = document.getElementById('copied'); // The "copied" message element
     

@@ -243,6 +243,9 @@ header {
 	top: -10px;
 }
 
+.heroBasic #ov_horizontal {display: initial;}
+.heroBasic #ov_vertical {display: none;}
+
 #info {
 	position: absolute;
 	left: 0;
@@ -917,6 +920,9 @@ nav {
 	width: 30px;
 	height: 30px;
 }
+
+.heroBasic #ov_horizontal {display: none;}
+.heroBasic #ov_vertical {display: initial;}
 
 #main {	padding-top: 0px;}
 
